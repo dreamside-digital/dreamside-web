@@ -9433,7 +9433,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.10, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -9519,6 +9519,17 @@ __metadata:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
+  languageName: node
+  linkType: hard
+
+"react-reveal@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "react-reveal@npm:1.2.2"
+  dependencies:
+    prop-types: ^15.5.10
+  peerDependencies:
+    react: ^15.3.0 || ^16.0.0
+  checksum: c15f62ed8bee3be2e51f2e5a902dea830dea9eee9dad6e860eaf83793b94e99dcba8f124332e0f4642bae4e93bf5d83af6418699c2849da023428c36c67535d4
   languageName: node
   linkType: hard
 
@@ -10999,6 +11010,7 @@ __metadata:
     prettier-plugin-tailwindcss: ^0.4.1
     react: 18.2.0
     react-dom: 18.2.0
+    react-reveal: ^1.2.2
     react-scroll-parallax: ^3.4.5
     reading-time: 1.5.0
     rehype-autolink-headings: ^6.1.0

@@ -26,7 +26,7 @@ import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
 import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
-import { ThemeProviders } from './theme-providers'
+import { ThemeProviders, ParallaxProviders } from './providers'
 import { Metadata } from 'next'
 
 const outfit = Outfit({
@@ -97,7 +97,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="flex h-screen w-full flex-col justify-between font-sans">
             <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
               <Header />
-              <main className="mb-auto">{children}</main>
+              <ParallaxProviders>
+                <main className="mb-auto">{children}</main>
+              </ParallaxProviders>
             </SearchProvider>
             <Footer />
           </div>

@@ -1,11 +1,11 @@
 const services = [
-  { title: 'Web design' },
-  { title: 'Web development' },
   { title: 'Prototypes' },
   { title: 'Automation' },
   { title: 'Integration' },
   { title: 'Branding' },
   { title: 'Print design' },
+  { title: 'Web design' },
+  { title: 'Web development' },
   { title: 'Custom software' },
 ]
 
