@@ -33,3 +33,13 @@ input:-webkit-autofill:focus {
 .katex-display {
   overflow: auto hidden;
 }
+
+body {
+  font-size: 16px;
+}
+
+@layer components {
+  a {
+    @apply text-primary-400 hover:text-primary-300 dark:text-primary-300 dark:hover:text-primary-400;
+  }
+}

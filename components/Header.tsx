@@ -8,7 +8,8 @@ import SearchButton from './SearchButton'
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between py-10">
+    <header className="container mx-auto max-w-2xl md:max-w-4xl lg:max-w-5xl px-4 sm:px-6 xl:max-w-6xl xl:px-0">
+    <div className="w-full flex items-center justify-between py-10">
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
@@ -16,7 +17,7 @@ const Header = () => {
               <Logo />
             </div>
             {typeof siteMetadata.headerTitle === 'string' ? (
-              <div className="hidden h-6 text-2xl font-semibold sm:block">
+              <div className="hidden h-6 text-3xl font-semibold sm:block text-black dark:text-white">
                 {siteMetadata.headerTitle}
               </div>
             ) : (
@@ -41,6 +42,7 @@ const Header = () => {
         <ThemeSwitch />
         <MobileNav />
       </div>
+    </div>
     </header>
   )
 }
