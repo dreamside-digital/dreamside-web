@@ -8,7 +8,8 @@ import SearchButton from './SearchButton'
 
 const Header = () => {
   return (
-    <header className="container mx-auto max-w-2xl md:max-w-4xl lg:max-w-5xl px-4 sm:px-6 xl:max-w-6xl xl:px-0">
+    <header className="absolute top-0 w-full ">
+    <div className="container mx-auto max-w-2xl md:max-w-4xl lg:max-w-5xl px-4 sm:px-6 xl:max-w-6xl xl:px-0">
     <div className="w-full flex items-center justify-between py-10">
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
@@ -42,6 +43,7 @@ const Header = () => {
         <ThemeSwitch />
         <MobileNav />
       </div>
+    </div>
     </div>
     </header>
   )

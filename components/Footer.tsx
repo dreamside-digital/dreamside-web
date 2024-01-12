@@ -6,7 +6,7 @@ import NewsletterForm from 'pliny/ui/NewsletterForm'
 export default function Footer() {
   return (
     <footer className="container mx-auto max-w-2xl md:max-w-4xl lg:max-w-5xl px-4 sm:px-6 xl:max-w-6xl xl:px-0">
-      <div className="mt-16 flex max-sm:flex-col items-center justify-between">
+      <div className="flex max-sm:flex-col items-center justify-between py-6">
         {siteMetadata.newsletter?.provider && (
           <div className="flex items-center justify-center py-4">
             <NewsletterForm />
