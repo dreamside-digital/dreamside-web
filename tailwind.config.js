@@ -41,8 +41,8 @@ module.exports = {
         //   950: '#0A0029',
         // },
         primary: { 
-          50: 'FFF7FC',
-          100: '#F0EBFF',
+          50: '#FFF7FC',
+          100: '#D6FFFA',
           200: '#C9ADFF',
           300: '#00f5d4',
           400: '#7547FF',

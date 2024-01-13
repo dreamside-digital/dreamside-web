@@ -121,6 +121,9 @@ export const Project = defineDocumentType(() => ({
     draft: { type: 'boolean' },
     url: { type: 'string' },
     client: { type: 'string' },
+    thumbnail: { type: 'string'},
+    thumbnailDescription: { type: 'string'},
+    order: { type: 'number' },
   },
   computedFields: {
     ...computedFields,
@@ -133,7 +136,7 @@ export const Project = defineDocumentType(() => ({
         datePublished: doc.date,
         dateModified: doc.lastmod || doc.date,
         description: doc.description,
-        image: doc.images ? doc.images[0] : siteMetadata.socialBanner,
+        image: doc.thumbnail ? doc.thumbnail : siteMetadata.socialBanner,
         url: `${siteMetadata.siteUrl}/${doc._raw.flattenedPath}`,
       }),
     },

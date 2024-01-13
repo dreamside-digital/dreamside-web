@@ -30,19 +30,9 @@ export default function Home({ posts }) {
 
   return (
     <>
-    <style jsx>{`
-        #gradient-bg {
-          background-image: radial-gradient(
-            circle 80vw at var(--x, 10vw) var(--y, 100px),
-            rgba(0, 245, 212, 0.4) 0%,
-            transparent 100%
-          );
-        }
-      `}</style>
-    <div 
-      id="gradient-bg"
+    <div
       ref={targetRef}
-      className="pt-36"
+      className="pt-36 bg-[radial-gradient(circle_70vw_at_var(--x,10vw)_var(--y,10vh),_#FFFFFF_0%,_transparent_100%)] dark:bg-[radial-gradient(circle_80vw_at_var(--x,10vw)_var(--y,10vh),_rgba(0,245,212,0.4)_0%,_transparent_100%)]"
     >
       <SectionContainer id="landing">
         <div className="max-w-xs md:max-w-md pt-4 pb-32">
@@ -76,8 +66,8 @@ export default function Home({ posts }) {
           <div className="w-full h-[60vh] md:h-[80vh] md:w-2/3 relative">
             <div className="absolute right-0 top-0 bottom-0 overflow-hidden">
               <Services />  
-              <div className="absolute top-0 w-full h-12 bg-gradient-to-b from-primary-50 dark:from-primary-950 to-transparent" />
-              <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-primary-50 dark:from-primary-950 to-transparent" />
+              <div className="absolute top-0 w-full h-12 bg-gradient-to-b from-white dark:from-primary-950 to-transparent" />
+              <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-white dark:from-primary-950 to-transparent" />
             </div>
           </div>
         </div>

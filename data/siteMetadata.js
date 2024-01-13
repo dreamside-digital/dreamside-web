@@ -5,7 +5,7 @@ const siteMetadata = {
   headerTitle: 'Brightbit',
   description: `Let's make a website you'll LOVE`,
   language: 'en-us',
-  theme: 'system', // system, dark or light
+  theme: 'dark', // system, dark or light
   siteUrl: 'https://www.brightbit.ca',
   siteRepo: 'https://github.com/s-kennedy/brightbit-web',
   siteLogo: '/static/images/logo.png',
