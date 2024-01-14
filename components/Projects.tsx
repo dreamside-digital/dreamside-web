@@ -3,6 +3,7 @@
 import { allProjects } from 'contentlayer/generated'
 import Fade from 'react-reveal/Fade';
 import Image from '@/components/Image'
+import Link from '@/components/Link'
 
 export default function Projects() {
   allProjects.sort((a,b) => a.order - b.order)
@@ -14,20 +15,29 @@ export default function Projects() {
           {
             allProjects.map((project, index) => {
               return (
-                <li key={project.path} className="w-10/12 md:w-5/12 lg:w-[30%] flex-none snap-center snap-always md:snap-start">
+                <li key={project.path} className="w-10/12 md:w-5/12 flex-none snap-center snap-always md:snap-start">
                     <div>
                       <div className="aspect-square bg-primary-100 dark:bg-primary-900 overflow-hidden">
                         <Image src={project.thumbnail} height={480} width={480} alt={project.thumbnailDescription} className="object-cover transform hover:scale-[110%] duration-200" />
                       </div>
-                      <h3 className="my-4 font-semibold text-xl  hover:text-primary-700 dark:text-white dark:hover:text-primary-300">
+                      <h3 className="my-4 font-semibold text-xl">
                         {project.title}
                       </h3>
                       <p>{project.description}</p>
+                      <div className="flex space-x-4">
+                        <Link href={`/${project.path}`} className="btn-theme">Case study</Link>
+                        {project.url && <Link href={`${project.url}`} className="btn-theme">Website</Link>}
+                      </div>
                     </div>
                 </li>
               )
             })
           }
+          <li key={"portfolio-btn"} className="w-10/12 md:w-5/12 flex-none snap-center snap-always md:snap-start">
+              <div className="aspect-square flex justify-center items-center">
+                <Link href="/projects" className="btn-theme">See all projects</Link>
+              </div>
+          </li>
         </ul>
       </Fade>
     </div>

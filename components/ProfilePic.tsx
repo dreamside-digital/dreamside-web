@@ -11,7 +11,7 @@ export default function ProfilePic() {
         <Image className="aspect-square rounded-full max-w-[250px] md:max-w-xs" src="/images/shay-brightbit.png" width={500} height={500} alt="Shay"></Image>
       </Parallax>
       <Fade up>
-        <p className="absolute -bottom-14 md:-bottom-20 text-7xl md:text-8xl font-display text-center text-primary-500 dark:text-primary-300">Let's talk!</p>
+        <p className="absolute -bottom-14 md:-bottom-20 text-7xl md:text-8xl font-display text-center text-primary-300 dark:text-secondary-300">Let's talk!</p>
       </Fade>
     </div>
   );

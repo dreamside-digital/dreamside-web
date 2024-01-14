@@ -42,6 +42,18 @@ body {
 
 @layer components {
   a {
-    @apply text-primary-500 hover:text-primary-700 dark:text-primary-300 dark:hover:text-primary-200;
+    @apply text-primary-500 hover:text-primary-300 dark:text-white dark:hover:text-secondary-300;
+  }
+
+  p a {
+    @apply underline;
+  }
+
+  .btn-theme {
+    @apply inline-block my-3 dark:text-white border-b-2 hover:-translate-y-1 dark:hover:text-white border-primary-300 dark:border-secondary-300 duration-200;
+  }
+
+  .handwriting {
+    @apply font-display font-normal inline-block text-[1.5em] leading-[0.75] ml-1 translate-y-3 lg:translate-y-[0.1em] text-primary-300 dark:text-secondary-300;
   }
 }
