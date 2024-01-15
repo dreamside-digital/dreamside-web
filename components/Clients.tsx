@@ -13,7 +13,7 @@ export default function Services() {
             <Fade delay={index*50} key={client.url}>
             <a href={client.url} className="flex flex-col items-center">
               <div className="w-36 h-36 flex flex-col justify-center items-center">
-                <Image src={client.logo} height={150} width={150} alt={client.name} className="object-contain dark:invert brightness-0" />
+                <Image title={client.name} src={client.logo} height={150} width={150} alt={client.name} className="object-contain dark:invert brightness-0" />
               </div>
             </a>
             </Fade>

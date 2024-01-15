@@ -84,7 +84,7 @@ export default function Home({ posts }) {
         <Projects />
       </SectionContainer>
 
-      <SectionContainer id="clients" className="py-16 ">
+      <SectionContainer id="clients" className="py-24">
         <div className="">
           <h2 className="uppercase text-center font-semibold !leading-tight mb-6 tracking-wider">The stellar organizations we've worked with</h2>
         </div>

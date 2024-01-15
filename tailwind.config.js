@@ -48,7 +48,7 @@ module.exports = {
           300: '#C30985', // pink
           400: '#571FFF', // electric indigo
           500: '#0A0029',
-          600: '#C30985',
+          600: '#C30985', // for search colour
         },
         //green
         secondary: { 
