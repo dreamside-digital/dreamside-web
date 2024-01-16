@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <div className="relative">
       <Fade>
-        <ul className="flex flex-nowrap space-x-8 overflow-auto styled-scrollbar snap-x snap-mandatory pr-12 pb-6">
+        <ul className="flex flex-nowrap space-x-12 overflow-auto styled-scrollbar snap-x snap-mandatory pr-12 pb-6">
           {
             allProjects.map((project, index) => {
               return (

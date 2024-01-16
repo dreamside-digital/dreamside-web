@@ -1,35 +1,56 @@
 'use client';
 
 import { Parallax } from 'react-scroll-parallax';
-import services from '@/data/services'
-import Image from '@/components/Image'
+import ValuesCircle from '@/data/values-circle.svg';
+import InclusionIcon from '@/data/values-inclusion.svg';
+import CollaborationIcon from '@/data/values-collaboration.svg';
+import OpenIcon from '@/data/values-open.svg';
+import Fade from 'react-reveal/Fade';
 
 export default function Values() {
   return (
-    <div>
-      <div className="flex justify-start">
-        <Parallax speed={-4} className="w-3/4 md:w-1/2">
-          <div className="mb-16">
-            <h3 className="text-2xl font-semibold mb-4">Inclusive design</h3>
-            <p className="text-xl">We use human-centred design practices to create products for diverse audiences with a wide range of abilities. We know our way around the Web Content Accessibility Guidelines (WCAG) but we go beyond compliance - accessibility is a foundational part of the design process and not a checklist.</p>
+    <div className="grid md:grid-cols-2 gap-12">
+
+      <div className="grid-item order-2 md:order-1">
+        <Fade>
+          <div className="my-12">
+            <div className="text-primary-300 dark:text-secondary-300 w-24 h-24 mb-4">
+              <InclusionIcon />
+            </div>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4">Inclusion</h3>
+            <p className="text-xl">We create products for diverse audiences with a wide range of abilities. We go beyond checkboxes and compliance - accessibility and inclusion is foundational to our design process.</p>
           </div>
-          <div className="mb-16">
-            <h3 className="text-2xl font-semibold mb-4">Collaborative process</h3>
-            <p className="text-xl">Collaborative design is a team effort that combines your subject matter expertise, our design and technical know-how, and the lived experiences of the communities you serve. We work with you to understand your organization's objectives and strategize towards products that can help you achieve greater social impact.</p>
+        </Fade>
+
+        <Fade>
+          <div className="my-12">
+            <div className="text-primary-300 dark:text-secondary-300 w-24 h-24 mb-4">
+              <CollaborationIcon />
+            </div>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4">Collaboration</h3>
+            <p className="text-xl">We bring together your subject matter expertise, our technical knowledge, and the voices of your community to co-create a product that truly serves your needs. When a project calls for additional skills, we don't hesitate to tap into our network of amazing collaborators!</p>
           </div>
-          <div className="mb-16">
-            <h3 className="text-2xl font-semibold mb-4">Ethical tech</h3>
-            <p className="text-xl">We believe in the power of open and actively contribute to the open-source community. We'll discuss with you to decide how your project can take part in the open-source ecosystem.</p>
+        </Fade>
+
+        <Fade>
+          <div className="my-12">
+            <div className="text-primary-300 dark:text-secondary-300 w-24 h-24 mb-4">
+              <OpenIcon />
+            </div>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4">Open</h3>
+            <p className="text-xl">We believe in the power of open. We're a small operation but we are able to deliver outstanding results by leveraging robust open-source tools built by thousands of developers - and we actively contribute back to the open-source ecosystem.</p>
           </div>
-        </Parallax>
+        </Fade>
       </div>
 
-
-      <div className="flex justify-end">
-        <Parallax speed={12} className="w-3/4 md:w-1/2 mt-12">
-          <Image src="/images/inclusive-design.svg" height={600} width={600} alt="two developers sitting at a computer together" />
-        </Parallax>
+      <div className="grid-item flex justify-center p-12 relative order-1 md:order-2">
+        <div className="w-full">
+          <Parallax translateY={['-30%', '70%']} rotate={[0,180]}>
+            <ValuesCircle />
+          </Parallax>
+        </div>
       </div>
+
     </div>
   );
 }

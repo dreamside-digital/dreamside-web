@@ -49,7 +49,7 @@ export default function Home({ posts }) {
         </div>
       </SectionContainer>
 
-      <SectionContainer id="about" className="py-16">
+      <SectionContainer id="about" className="py-12 md:py-24">
         <div className="md:w-1/2 mb-12">
           <h2 className="text-4xl md:text-5xl font-semibold !leading-tight">We want to work with organizations who share our <span className="handwriting">values</span></h2>
         </div>
@@ -58,16 +58,19 @@ export default function Home({ posts }) {
        
       </SectionContainer>
 
-      <SectionContainer id="services" className="py-16">
+      <SectionContainer id="services" className="py-12 md:py-24">
         <div className="w-full h-full md:flex justify-between">
-          <div className="w-full md:w-1/3 flex justify-end">
+          <div className="w-full md:w-1/3 flex flex-col justify-between md:order-2">
             <div className="mb-12">
               <h2 className="text-4xl md:text-5xl font-semibold !leading-tight mb-6">What we <span className="handwriting">do</span></h2>
               <p className="text-xl">Beyond specific services, we take the time to deeply understand our clients' needs (and constraints) and come up with an appropriate digital strategy together.</p>
             </div>
+            {/*<div className="">
+              <Image src="/images/pair-programming.svg" width={400} height={400} />
+            </div>*/}
           </div>
-          <div className="w-full h-[60vh] md:h-[80vh] md:w-2/3 relative">
-            <div className="absolute right-0 top-0 bottom-0 overflow-hidden">
+          <div className="w-full h-[60vh] md:h-[80vh] md:w-2/3 relative md:order-1">
+            <div className="absolute left-0 top-0 bottom-0 overflow-hidden">
               <Services />  
               <div className="absolute top-0 w-full h-12 bg-gradient-to-b from-white dark:from-primary-500 to-transparent" />
               <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-white dark:from-primary-500 to-transparent" />
@@ -76,7 +79,7 @@ export default function Home({ posts }) {
         </div>
       </SectionContainer>
 
-      <SectionContainer id="projects" className="py-16">
+      <SectionContainer id="projects" className="py-12 md:py-24">
         <div className="md:w-1/2">
           <h2 className="text-4xl md:text-5xl font-semibold !leading-tight mb-4">Here are some of our favourite <span className="handwriting">projects</span></h2>
         </div>
@@ -84,14 +87,11 @@ export default function Home({ posts }) {
         <Projects />
       </SectionContainer>
 
-      <SectionContainer id="clients" className="py-24">
-        <div className="">
-          <h2 className="uppercase text-center font-semibold !leading-tight mb-6 tracking-wider">The stellar organizations we've worked with</h2>
-        </div>
+      <section id="clients" className="py-12 md:py-24 max-w-[100vw]">
         <Clients />
-      </SectionContainer>
+      </section>
 
-      <SectionContainer id="contact" className="py-16">
+      <SectionContainer id="contact" className="py-12 md:py-24">
         <div className="md:flex">
           <div className="md:basis-1/2 mb-12">
             <h2 className="text-4xl md:text-5xl font-semibold !leading-tight mb-12">So what do <span className="handwriting">you</span> have in mind?</h2>
