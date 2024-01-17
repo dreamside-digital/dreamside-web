@@ -1,6 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
+import Logo from '@/data/logo-dreamside.svg'
 import Link from './Link'
 import Image from './Image'
 import MobileNav from './MobileNav'
