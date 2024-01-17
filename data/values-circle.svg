@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="uuid-4612355d-a1ae-41f9-bdc7-9f82b29bcc45" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 543.92627 543.928223">
+<svg id="uuid-b798b338-9040-405b-b90e-e3e9a8f4a1b1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 545.592773 545.605957">
   <defs>
     <style>
-      .uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2 {
+      .uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d {
         font-family: Outfit-Bold, Outfit;
-        font-size: 66px;
+        font-size: 67px;
         font-variation-settings: 'wght' 700;
         font-weight: 700;
         fill: currentColor;
       }
     </style>
   </defs>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(207.169434 64.922852) rotate(-14.785553)"><tspan x="0" y="0">I</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(224.675293 59.073242) rotate(-6.041709)"><tspan x="0" y="0">N</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(271.604004 54.117676) rotate(5.826861)"><tspan x="0" y="0">C</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(315.481934 58.856445) rotate(16.399991)"><tspan x="0" y="0">L</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(348.497559 67.874512) rotate(26.70265)"><tspan x="0" y="0">U</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(388.112793 88.020508) rotate(37.386203)"><tspan x="0" y="0">S</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(417.700684 111.344727) rotate(44.775777)"><tspan x="0" y="0">I</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(431.747559 123.236816) rotate(54.013077)"><tspan x="0" y="0">O</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(461.993652 164.980469) rotate(67.007646)"><tspan x="0" y="0">N</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(479.560059 209.413574) rotate(74.924703)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(482.805176 221.457031) rotate(78.244714)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(485.35498 233.711426) rotate(81.565955)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(487.376465 245.800781) rotate(86.192302)"><tspan x="0" y="0">•</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(488.712402 268.582031) rotate(90.92886)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(488.525879 281.175293) rotate(94.034431)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(487.648926 293.637207) rotate(97.323085)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(487.260254 305.506348) rotate(104.807682)"><tspan x="0" y="0">C</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(476.623535 348.100098) rotate(117.458912)"><tspan x="0" y="0">O</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(452.182129 393.686035) rotate(128.95437)"><tspan x="0" y="0">L</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(429.683105 421.660645) rotate(138.367968)"><tspan x="0" y="0">L</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(404.383301 445.145996) rotate(148.8787)"><tspan x="0" y="0">A</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(364.375488 469.132324) rotate(160.453151)"><tspan x="0" y="0">B</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(326.247559 483.461426) rotate(172.682386)"><tspan x="0" y="0">O</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(274.960449 489.659668) rotate(-175.190678)"><tspan x="0" y="0">R</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(235.789551 486.98291) rotate(-164.145005)"><tspan x="0" y="0">A</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(190.983887 474.098145) rotate(-152.563353)"><tspan x="0" y="0">T</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(154.725586 454.45752) rotate(-144.678857)"><tspan x="0" y="0">I</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(138.912598 445.028809) rotate(-135.43757)"><tspan x="0" y="0">O</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(102.199707 408.782715) rotate(-122.508172)"><tspan x="0" y="0">N</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(77.526367 367.875488) rotate(-114.635013)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(72.316895 356.519043) rotate(-111.311272)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(67.772949 344.873535) rotate(-107.981629)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(63.772949 333.291504) rotate(-103.306064)"><tspan x="0" y="0">•</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(58.709473 310.989746) rotate(-98.642302)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(56.82959 298.628418) rotate(-95.340944)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(55.664551 286.169434) rotate(-92.063532)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(53.694824 274.534668) rotate(-83.737941)"><tspan x="0" y="0">O</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(59.773926 223.239746) rotate(-71.614035)"><tspan x="0" y="0">P</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(72.182129 185.537598) rotate(-61.205414)"><tspan x="0" y="0">E</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(90.602051 150.913086) rotate(-49.837173)"><tspan x="0" y="0">N</tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(122.286621 115.180664) rotate(-42.03224)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(131.585449 106.797363) rotate(-38.740524)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(141.330566 98.977539) rotate(-35.44999)"><tspan x="0" y="0"> </tspan></text>
-  <text class="uuid-f388ddae-c81f-4f4a-a87d-c1cc9a6e9ec2" transform="translate(151.205078 91.669434) rotate(-30.808282)"><tspan x="0" y="0">•</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(207.998535 65.754883) rotate(-14.746303)"><tspan x="0" y="0">I</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(225.791504 59.805664) rotate(-5.866738)"><tspan x="0" y="0">N</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(273.470215 54.918945) rotate(6.188637)"><tspan x="0" y="0">C</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(318.010742 60.021484) rotate(16.933291)"><tspan x="0" y="0">L</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(351.481445 69.493652) rotate(27.398929)"><tspan x="0" y="0">U</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(391.478516 90.456543) rotate(38.248044)"><tspan x="0" y="0">S</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(421.161133 114.601074) rotate(45.752419)"><tspan x="0" y="0">I</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(435.070312 127.269043) rotate(54.356815)"><tspan x="0" y="0">V</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(461.924805 165.022949) rotate(65.720503)"><tspan x="0" y="0">E</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(477.814453 202.253906) rotate(72.711639)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(481.602539 214.425293) rotate(76.107623)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(484.666992 226.81543) rotate(79.50121)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(487.166016 239.035156) rotate(84.223828)"><tspan x="0" y="0">•</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(489.295898 262.175293) rotate(88.894352)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(489.541016 274.969238) rotate(92.21646)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(489.047852 287.723145) rotate(95.561518)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(489.036133 299.787598) rotate(103.144025)"><tspan x="0" y="0">C</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(479.49707 343.36084) rotate(115.999711)"><tspan x="0" y="0">O</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(455.837891 390.284668) rotate(127.69096)"><tspan x="0" y="0">L</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(433.609375 419.205566) rotate(137.257843)"><tspan x="0" y="0">L</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(408.357422 443.580566) rotate(147.934126)"><tspan x="0" y="0">A</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(368.15332 468.594238) rotate(159.674399)"><tspan x="0" y="0">B</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(329.619141 483.686035) rotate(172.101301)"><tspan x="0" y="0">O</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(277.56543 490.497559) rotate(-175.569548)"><tspan x="0" y="0">R</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(237.758789 488.04834) rotate(-164.356605)"><tspan x="0" y="0">A</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(192.212891 475.128418) rotate(-152.596042)"><tspan x="0" y="0">T</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(155.349609 455.171387) rotate(-144.576977)"><tspan x="0" y="0">I</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(139.395996 445.199707) rotate(-135.971306)"><tspan x="0" y="0">V</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(106.208984 412.867676) rotate(-124.676755)"><tspan x="0" y="0">E</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(83.838867 379.091309) rotate(-117.724882)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(77.906738 367.803223) rotate(-114.339825)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(72.660156 356.206543) rotate(-110.953466)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(67.969727 344.611816) rotate(-106.188446)"><tspan x="0" y="0">•</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(61.693848 322.22998) rotate(-101.435651)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(59.168457 309.741699) rotate(-98.056395)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(57.383789 297.124512) rotate(-94.696215)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(54.827148 285.366699) rotate(-86.24316)"><tspan x="0" y="0">O</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(58.723145 233.041992) rotate(-73.961407)"><tspan x="0" y="0">P</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(69.75293 194.244629) rotate(-63.373746)"><tspan x="0" y="0">E</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(87.105957 158.402832) rotate(-51.815996)"><tspan x="0" y="0">N</tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(118.058105 121.005859) rotate(-43.873851)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(127.241699 112.177246) rotate(-40.526008)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(136.933105 103.893066) rotate(-37.171485)"><tspan x="0" y="0"> </tspan></text>
+  <text class="uuid-9e18ca1e-c73d-45c1-a339-28bc6ab1d28d" transform="translate(146.744629 96.162109) rotate(-32.459595)"><tspan x="0" y="0">•</tspan></text>
 </svg>

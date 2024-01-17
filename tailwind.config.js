@@ -97,6 +97,9 @@ module.exports = {
           },
         },
       }),
+      animation: {
+        'spin-slow': 'spin 5s linear infinite',
+      }
     },
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],

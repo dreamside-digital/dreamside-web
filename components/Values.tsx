@@ -2,9 +2,9 @@
 
 import { Parallax } from 'react-scroll-parallax';
 import ValuesCircle from '@/data/values-circle.svg';
-import InclusionIcon from '@/data/values-inclusion.svg';
-import CollaborationIcon from '@/data/values-collaboration.svg';
-import OpenIcon from '@/data/values-open.svg';
+import InclusionIcon from '@/data/values-icons-01.svg';
+import CollaborationIcon from '@/data/values-icons-02.svg';
+import OpenIcon from '@/data/values-icons-03.svg';
 import Fade from 'react-reveal/Fade';
 
 export default function Values() {
@@ -18,7 +18,7 @@ export default function Values() {
               <InclusionIcon />
             </div>
             <h3 className="text-2xl md:text-3xl font-semibold mb-4">Inclusion</h3>
-            <p className="text-xl">We create products for diverse audiences with a wide range of abilities. We go beyond checkboxes and compliance - accessibility and inclusion is foundational to our design process.</p>
+            <p className="text-xl">We create products for diverse audiences with a wide range of abilities. We go beyond checkboxes and compliance; accessibility and inclusion is foundational to our design process.</p>
           </div>
         </Fade>
 
@@ -37,8 +37,8 @@ export default function Values() {
             <div className="text-primary-300 dark:text-secondary-300 w-24 h-24 mb-4">
               <OpenIcon />
             </div>
-            <h3 className="text-2xl md:text-3xl font-semibold mb-4">Open</h3>
-            <p className="text-xl">We believe in the power of open. We're a small operation but we are able to deliver outstanding results by leveraging robust open-source tools built by thousands of developers - and we actively contribute back to the open-source ecosystem.</p>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4">Open-source</h3>
+            <p className="text-xl">We're a small operation but we are able to deliver outstanding results by leveraging the power of open-source tools built by thousands of developers - and we actively contribute back to the open-source ecosystem.</p>
           </div>
         </Fade>
       </div>

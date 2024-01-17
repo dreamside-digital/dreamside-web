@@ -15,7 +15,7 @@ export default function Clients() {
           {
             clientsRow1.map((client, index) => {
               return (
-                <a href={client.url} className="shrink-0 w-28 md:w-52 flex flex-col items-center">
+                <a key={client.url} href={client.url} className="shrink-0 w-28 md:w-52 flex flex-col items-center">
                   <div className="w-24 h-24 md:w-40 md:h-40 flex flex-col justify-center items-center">
                     <Image title={client.name} src={client.logo} height={150} width={150} alt={client.name} className="object-contain dark:invert brightness-0" />
                   </div>
@@ -33,7 +33,7 @@ export default function Clients() {
           {
             clientsRow2.map((client, index) => {
               return (
-                <a href={client.url} className="shrink-0 w-28 md:w-52 flex flex-col items-center">
+                <a key={client.url} href={client.url} className="shrink-0 w-28 md:w-52 flex flex-col items-center">
                   <div className="w-24 h-24 md:w-40 md:h-40 flex flex-col justify-center items-center">
                     <Image title={client.name} src={client.logo} height={150} width={150} alt={client.name} className="object-contain dark:invert brightness-0" />
                   </div>

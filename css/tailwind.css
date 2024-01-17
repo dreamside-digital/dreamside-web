@@ -56,6 +56,11 @@ body {
   .handwriting {
     @apply font-display font-normal inline-block text-[1.5em] leading-[0.75] ml-1 translate-y-3 lg:translate-y-[0.1em] text-primary-300 dark:text-secondary-300;
   }
+
+  .rotate-slow {
+    @apply animate-spin;
+    animation-duration: 5s;
+  }
 }
 
 #main-logo svg {
@@ -63,3 +68,5 @@ body {
   height: 2.5em;
   width: 2.5em;
 }
+
+
