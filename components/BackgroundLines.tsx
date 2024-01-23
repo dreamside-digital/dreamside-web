@@ -1,6 +1,6 @@
 export default function BackgroundLines() {
   return (
-    <div className="bg-secondary-200 dark:bg-primary-500 hidden dark:flex h-full justify-around items-stretch absolute inset-0 -z-20">
+    <div className="hidden dark:flex h-full justify-around items-stretch absolute inset-0 -z-20">
       <div className="flex-auto border-r-[1px] border-secondary-500" />
       <div className="flex-auto border-r-[1px] border-secondary-500" />
       <div className="flex-auto border-r-[1px] border-secondary-500" />

@@ -11,6 +11,8 @@ import clients from '@/data/clients'
 import siteMetadata from '@/data/siteMetadata'
 import BackgroundGlow from '@/components/BackgroundGlow'
 import BackgroundLines from '@/components/BackgroundLines'
+import PackageIconEditorial from '@/data/package-icons-editorial.svg'
+import PackageIconData from '@/data/package-icons-data.svg'
 
 export default function Home({ posts }) {
 
@@ -102,6 +104,9 @@ export default function Home({ posts }) {
           <div className="md:grid md:grid-cols-2 gap-6 max-md:space-y-6">
 
             <div className="space-y-6 border-[1px] border-primary-300 dark:border-secondary-300 p-6 text-lg">
+              <div className="text-primary-300 dark:text-secondary-300 w-28 h-28 mb-4">
+                <PackageIconEditorial />
+              </div>
               <h3 className="text-3xl font-semibold dark:text-secondary-300">Editorial website</h3>
 
               <p>If your website is going to be focused on great content such as a blog, portfolio, or news site, this is the package for you.</p>
@@ -127,6 +132,9 @@ export default function Home({ posts }) {
             </div>
 
             <div className="space-y-6 border-[1px] border-primary-300 dark:border-secondary-300 p-6 text-lg">
+              <div className="text-primary-300 dark:text-secondary-300 w-28 h-28 mb-4">
+                <PackageIconData />
+              </div>
               <h3 className="text-3xl font-semibold dark:text-secondary-300">Data-centric website</h3>
               <p>If you're looking to build a website with a more data-centric purpose such as location mapping, data visualization, or a resource directory, this package may be right for you.</p>
               <p>It includes everything from the Editorial website package, plus:</p>
@@ -165,8 +173,8 @@ export default function Home({ posts }) {
           </div>
         </div>
       </SectionContainer>
-      <BackgroundLines />
       <BackgroundGlow />
+      <BackgroundLines />
     </>
   )
 }

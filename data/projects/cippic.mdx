@@ -1,13 +1,26 @@
 ---
-title: Canadian Internet Policy and Public Interest Clinic
-description: "Redesign and redevelopment of a legacy website and transfer to a modern open-source content management system"
+title: CIPPIC Website Redesign
+description: "We redesigned the CIPPIC website to give it a modern look and feel, all while maintaining the organization's professional and well-established brand and wealth of content."
 tags: ['branding', 'web design', 'web development']
 draft: false
 url: 'https://www.cippic.ca'
-client: CIPPIC
+client: Samuelson-Glushko Canadian Internet Policy and Public Interest Clinic (CIPPIC)
 thumbnail: '/images/projects/cippic-thumbnail.png'
 thumbnailDescription: 'The home page of the new CIPPIC website'
+github: https://github.com/nomadic-labs/cippic-web
 order: 4
 ---
 
-Redesign and redevelopment of a legacy website and transfer to a modern open-source content management system
+CIPPIC is a well-established legal nonprofit based in the University of Ottawa’s Faculty of Law. Their website dates from 2007 and has over a thousand articles and pages from years of research and writing. 
+
+I worked closely with the CIPPIC team to redesign the website to refresh the overall appearance and, more importantly, to make it easier for visitors to navigate and access the wealth of resources on the website. 
+
+We also switched to a modern open-source content management system (CMS) and moved over all the existing content while maintaining the categorization and tagging system. 
+
+The new website includes a page builder that gives CIPPIC staff the flexibility to create pages with different layouts and sections to accommodate various types of content.
+
+### The technical stuff
+
+The new website is built with Next.js for the front-end and Strapi for the content management system. The website template is custom designed and coded. 
+
+The original website was built on Drupal 6, so I was able to export the content as HTML. I then wrote a Python script to convert the exported content to Markdown and include the relevant data for internationalization, tagging, categorization, and author and publishing information, before importing it all via the Strapi API.  

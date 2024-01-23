@@ -24,7 +24,7 @@ export default function BackgroundGlow() {
   return (
     <div
       ref={targetRef}
-      className="fixed inset-0 -z-10 h-full bg-[radial-gradient(circle_80vw_at_var(--x,10vw)_var(--y,10vh),_#FFFFFF_0%,_transparent_100%)] dark:bg-[radial-gradient(circle_80vw_at_var(--x,10vw)_var(--y,10vh),_rgba(0,245,212,0.3)_0%,_transparent_100%)]"
+      className="fixed inset-0 -z-10 h-full bg-secondary-200 dark:bg-transparent bg-[radial-gradient(circle_80vw_at_var(--x,10vw)_var(--y,10vh),_#FFFFFF_0%,_transparent_100%)] dark:bg-[radial-gradient(circle_80vw_at_var(--x,10vw)_var(--y,10vh),_rgba(0,245,212,0.3)_0%,_transparent_100%)]"
     />
   )
 }

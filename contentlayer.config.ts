@@ -124,6 +124,7 @@ export const Project = defineDocumentType(() => ({
     thumbnail: { type: 'string'},
     thumbnailDescription: { type: 'string'},
     order: { type: 'number' },
+    github: { type: 'string' },
   },
   computedFields: {
     ...computedFields,

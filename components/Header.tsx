@@ -20,7 +20,7 @@ const Header = () => {
             <div id="main-logo" className="rotate-45 hidden dark:block mr-3 text-primary-300 dark:text-secondary-300 text-xl sm:text-2xl md:text-3x">
               <LogoDark />
             </div>
-            <div id="main-logo" className="-rotate-45 dark:hidden mr-3 text-primary-300 dark:text-secondary-300 text-xl sm:text-2xl md:text-3x">
+            <div id="main-logo" className="rotate-45 dark:hidden mr-3 text-primary-300 dark:text-secondary-300 text-xl sm:text-2xl md:text-3x">
               <LogoLight />
             </div>
             {typeof siteMetadata.headerTitle === 'string' ? (

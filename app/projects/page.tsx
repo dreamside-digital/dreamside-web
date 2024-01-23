@@ -28,6 +28,7 @@ export default function Projects() {
               imgSrc={d.imgSrc}
               url={d.url}
               path={d.path}
+              github={d.github}
             />
           ))}
         </div>
