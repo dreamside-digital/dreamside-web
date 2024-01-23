@@ -1,6 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo-dreamside.svg'
+import LogoLight from '@/data/logo-05.svg'
+import LogoDark from '@/data/logo-04.svg'
 import Link from './Link'
 import Image from './Image'
 import MobileNav from './MobileNav'
@@ -16,8 +17,11 @@ const Header = () => {
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
-            <div id="main-logo" className="mr-3 text-primary-300 dark:text-secondary-300 text-xl sm:text-2xl md:text-3x">
-              <Logo />
+            <div id="main-logo" className="rotate-45 hidden dark:block mr-3 text-primary-300 dark:text-secondary-300 text-xl sm:text-2xl md:text-3x">
+              <LogoDark />
+            </div>
+            <div id="main-logo" className="-rotate-45 dark:hidden mr-3 text-primary-300 dark:text-secondary-300 text-xl sm:text-2xl md:text-3x">
+              <LogoLight />
             </div>
             {typeof siteMetadata.headerTitle === 'string' ? (
               <div className="flex items-center text-xl sm:text-2xl md:text-3xl font-semibold text-black dark:text-white">

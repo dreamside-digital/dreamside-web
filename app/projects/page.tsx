@@ -1,35 +1,39 @@
 import { allProjects } from 'contentlayer/generated'
 import Card from '@/components/Card'
+import SectionContainer from '@/components/SectionContainer'
 import { genPageMetadata } from 'app/seo'
+import BackgroundGlow from '@/components/BackgroundGlow'
+import BackgroundLines from '@/components/BackgroundLines'
 
 export const metadata = genPageMetadata({ title: 'Projects' })
 
 export default function Projects() {
   return (
     <>
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Projects
-          </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Showcase your projects with a hero image (16 x 9)
-          </p>
-        </div>
-        <div className="container py-12">
-          <div className="-m-4 flex flex-wrap">
-            {allProjects.map((d) => (
-              <Card
-                key={d.title}
-                title={d.title}
-                description={d.description}
-                imgSrc={d.imgSrc}
-                href={d.href}
-              />
-            ))}
+      <SectionContainer>
+          <div className="space-y-2 pt-6 md:space-y-5">
+            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[8vw] !leading-tight font-semibold">
+              Projects
+            </h1>
           </div>
+      </SectionContainer>
+
+      <SectionContainer className="py-12 md:py-20">
+        <div className="space-y-12 snap-y snap-mandatory">
+          {allProjects.map((d) => (
+            <Card
+              key={d.title}
+              title={d.title}
+              description={d.description}
+              imgSrc={d.imgSrc}
+              url={d.url}
+              path={d.path}
+            />
+          ))}
         </div>
-      </div>
+      </SectionContainer>
+      <BackgroundLines />
+      <BackgroundGlow />
     </>
   )
 }

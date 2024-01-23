@@ -1,16 +1,16 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Dreamside',
+  title: 'Studio Shay',
   author: 'Shay Kennedy',
-  headerTitle: 'Dreamside',
-  description: `We are a digital product studio committed to using design and technology for good`,
+  headerTitle: 'Studio Shay',
+  description: `A digital product studio committed to using design and technology for good`,
   language: 'en-us',
   theme: 'dark', // system, dark or light
   siteUrl: 'https://www.dreamside.digital',
   siteRepo: 'https://github.com/s-kennedy/brightbit-web',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'hello@brightbit.ca',
+  email: 'shay@studioshay.ca',
   github: 'https://github.com',
   twitter: 'https://twitter.com/Twitter',
   linkedin: 'https://www.linkedin.com',

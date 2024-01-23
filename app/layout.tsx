@@ -24,7 +24,6 @@ import { Analytics, AnalyticsConfig } from 'pliny/analytics'
 import { SearchProvider, SearchConfig } from 'pliny/search'
 import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
-import BackgroundGlow from '@/components/BackgroundGlow'
 import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders, ParallaxProviders } from './providers'
@@ -92,14 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <body className="relative bg-secondary-200 text-black antialiased dark:bg-primary-500 dark:text-white">
-      <div className="hidden dark:flex h-full justify-around items-stretch absolute inset-0 -z-20">
-        <div className="flex-auto border-r-[1px] border-secondary-500" />
-        <div className="flex-auto border-r-[1px] border-secondary-500" />
-        <div className="flex-auto border-r-[1px] border-secondary-500" />
-        <div className="flex-auto md:border-r-[1px] border-secondary-500" />
-        <div className="hidden md:block flex-auto dark:border-secondary-500" />
-      </div>
+      <body className="relative text-black antialiased dark:bg-primary-500 dark:text-white">
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
           <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
@@ -112,7 +104,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </ParallaxProviders>
           </SearchProvider>
         </ThemeProviders>
-        <BackgroundGlow />
       </body>
     </html>
   )
