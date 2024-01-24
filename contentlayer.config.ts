@@ -122,6 +122,7 @@ export const Project = defineDocumentType(() => ({
     url: { type: 'string' },
     client: { type: 'string' },
     thumbnail: { type: 'string'},
+    images: { type: 'json'},
     thumbnailDescription: { type: 'string'},
     order: { type: 'number' },
     github: { type: 'string' },

@@ -19,13 +19,13 @@ export default function Projects() {
       </SectionContainer>
 
       <SectionContainer className="py-12 md:py-20">
-        <div className="space-y-12 snap-y snap-mandatory">
+        <div className="space-y-20 snap-y snap-mandatory">
           {allProjects.map((d) => (
             <Card
               key={d.title}
               title={d.title}
               description={d.description}
-              imgSrc={d.imgSrc}
+              images={d.images}
               url={d.url}
               path={d.path}
               github={d.github}
@@ -33,8 +33,6 @@ export default function Projects() {
           ))}
         </div>
       </SectionContainer>
-      <BackgroundLines />
-      <BackgroundGlow />
     </>
   )
 }

@@ -29,7 +29,7 @@ interface LayoutProps {
 }
 
 export default function PostLayout({ content, next, prev, children }: LayoutProps) {
-  const { filePath, path, slug, date, title, tags, github, url } = content
+  const { filePath, path, slug, date, title, tags, github, url, images, client } = content
   const basePath = path.split('/')[0]
 
   return (
@@ -39,18 +39,37 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
         <SectionContainer>
         <div>
           <header className="pt-6 xl:pb-6">
-            <div className="space-y-1">
-              <div>
-                <h1 className="text-md font-semibold uppercase tracking-wide">{title}</h1>
-              </div>
+            <div className="lg:grid lg:grid-cols-2 gap-6 max-lg:space-y-6 max-lg:mb-6">
+              {
+                images.map((image, index) => (
+                  <Image
+                    key={image.src}
+                    alt={image.alt}
+                    src={image.src}
+                    className={`shadow-md ${index === 0 ? 'col-span-2 object-cover object-center w-full aspect-video' : 'object-contain'}`}
+                    width={1400}
+                    height={788}
+                    priority={index === 0}
+                  />
+                ))
+              }
             </div>
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0">
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">{children}</div>
+            <div className="py-4 xl:py-8 xl:col-span-3 xl:row-span-2 xl:pb-0">
+              <h1 className="text-2xl font-semibold">{title}</h1>
+              <div className="prose max-w-none pb-8 pt-10 dark:prose-invert dark:prose-a:text-white dark:hover:prose-a:text-secondary-300">{children}</div>
             </div>
             <aside>
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
+                {client && (
+                  <div className="py-4 xl:py-8">
+                    <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                      Client
+                    </h2>
+                    <p>{client}</p>
+                  </div>
+                )}
                 {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
@@ -87,7 +106,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                   {prev && prev.path && (
                     <div>
                       <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                        Previous Article
+                        Previous Project
                       </h2>
                       <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
                         <Link href={`/${prev.path}`}>{prev.title}</Link>
@@ -97,7 +116,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                   {next && next.path && (
                     <div>
                       <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                        Next Article
+                        Next Project
                       </h2>
                       <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
                         <Link href={`/${next.path}`}>{next.title}</Link>

@@ -1,12 +1,47 @@
 ---
 title: Unboring KW
 description: "A community directory for family-friendly events and things to do in Kitchener-Waterloo"
-tags: ['web development', 'branding', 'web design']
+tags: ['web development', 'branding', 'web design', 'mapping']
 draft: false
 url: 'https://www.unboringkw.com'
 thumbnail: '/images/projects/unboringkw-thumbnail.png'
 thumbnailDescription: 'Three screens from Unboring KW: the home screen, the events screen, and a map of public art'
 order: 1
+images: 
+  - src: '/images/projects/unboringkw-1.jpg'
+    alt: 'Three screens from Unboring KW: the home screen, the events screen, and a map of public art'
+  - src: '/images/projects/unboringkw-2.jpg'
+    alt: 'Screenshot of the events page'
+  - src: '/images/projects/unboringkw-3.jpg'
+    alt: 'Screenshot of the map of playgrounds'
 ---
 
-# Unboring KW
+Unboring KW is a personal project for fun and community! 
+
+During my maternity leave in 2022, I discovered how easy it is to become isolated as a parent, despite living in a growing city with lots of events and things to do. I found it difficult to keep track of all the programs and events put on by the City, local libraries, businesses, and community centres. So as I was getting ready to go back to work, I created Unboring KW as a way to rediscover my passion for web development and also to solve the problem that I and many other parents have of staying engaged in the community with our kids in tow! 
+
+Unboring KW is a mobile-friendly website that includes:
+
+- family-friendly event listings
+- directory of activities to do in the region
+- interactive maps of local playgrounds, splashpads, and public art
+- directory of summer camps
+- a blog
+
+As time goes on I plan to add more features to the website, such as:
+
+- a business directory of local businesses targeting families and kids
+- user accounts so people can bookmark resources and create their own collections
+- email newsletters and notifications so people can get reminded about upcoming events
+
+### The technical stuff
+
+Currently the key components of Unboring KW are as follows:
+
+- progressive web app (PWA) built with Next.js
+- [Directus](https://directus.io/) back end for content management
+- [Supabase](https://supabase.com/) database
+- Custom scrapers on [Apify](https://apify.com/) to scrape events from various sources
+- Edge functions on Supabase to transform scraped events and insert them to the database
+
+
