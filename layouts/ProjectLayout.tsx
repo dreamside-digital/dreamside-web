@@ -70,7 +70,9 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                       </h2>
                       <div className="flex xl:flex-col">
                         {tags.map((tag) => (
-                          <div key={tag} className="mr-3 text-sm font-medium">{tag}</div>
+                          <div key={tag} className="mr-3 text-sm font-medium">
+                            {tag}
+                          </div>
                         ))}
                       </div>
                     </div>
