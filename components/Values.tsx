@@ -1,10 +1,10 @@
 'use client';
 
 import { Parallax } from 'react-scroll-parallax';
-import ValuesCircle from '@/data/values-circle.svg';
-import InclusionIcon from '@/data/values-icons-01.svg';
-import CollaborationIcon from '@/data/values-icons-02.svg';
-import OpenIcon from '@/data/values-icons-03.svg';
+import ValuesCircle from '@/data/assets/values-circle.svg';
+import InclusionIcon from '@/data/assets/values-icons-01.svg';
+import CollaborationIcon from '@/data/assets/values-icons-02.svg';
+import OpenIcon from '@/data/assets/values-icons-03.svg';
 import Fade from 'react-reveal/Fade';
 
 export default function Values() {

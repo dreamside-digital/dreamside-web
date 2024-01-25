@@ -1,13 +1,12 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import LogoLight from '@/data/logo-05.svg'
-import LogoDark from '@/data/logo-04.svg'
+import LogoLight from '@/data/assets/logo-05.svg'
+import LogoDark from '@/data/assets/logo-04.svg'
 import Link from './Link'
 import Image from './Image'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
-// import Logo from './Logo'
 
 const Header = () => {
   return (

@@ -1,13 +1,39 @@
 ---
 title: Pathways to Care
-description: "Web design and development with custom integration to 211 provincial data."
-tags: ['branding', 'web design', 'web development', 'integrations']
+description: Pathways to Care provides access to services, research, and events through their website. The website includes a tool for finding and accessing mental health services that is powered by 211 Ontario data. 
+tags:
+  - web design
+  - web development
+  - branding
+  - integrations
+  - custom software
 draft: false
-url: 'https://www.pathwaystocare.ca'
+url: https://www.pathwaystocare.ca
 client: Black Health Alliance
 thumbnail: '/images/projects/ptc-thumbnail.png'
 thumbnailDescription: 'Colourful raphic collage of a young Black woman'
+images: 
+  - src: '/images/projects/ptc-1.jpg'
+    alt: The home page of Pathways to Care
+  - src: '/images/projects/ptc-2.jpg'
+    alt: Screenshot of an FAQ section
+  - src: '/images/projects/ptc-3.jpg'
+    alt: Screenshot of an article page
 order: 3
 ---
 
-# Pathways to Care
+Pathways to Care is a project of Black Health Alliance, an organization working to improve the health and well-being of Black communities in Canada. The Pathways to Care website is a home for the project's research, publications, events, and a mental health service directory they developed called ConnectME. 
+
+ConnectME was created to help youth and families to find culturally appropriate mental health services. We worked with a user research service called [GRIT](https://codefor.ca/grit/), offered by Code for Canada, to conduct interviews and user testing with members of the target demographic. This allowed us to design the tool from the ground up with the input and feedback of the expected user base. 
+
+Once ConnectME was up and running, we then partnered with 211 Ontario to integrate their data into the ConnectME database. This ensures the long-term sustainability and accuracy of the ConnectME data, while reducing the need for manual data entry and validation. 
+
+### The technical stuff
+
+The Pathways to Care website is built in Next.js with a Supabase backend. I used a custom content editing library built in React that allows for inline editing, giving the website editors an intuitive and seamless editing experience. 
+
+I built a custom integration with the 211 API that periodically imports their data to our database. We used Supabase Edge functions and Github actions to automate the data import.
+
+There are a few other integrations:
+- custom component to embed Visme documents for research and publications
+- Mailchimp integration to display the latest newsletters on the website

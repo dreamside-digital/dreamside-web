@@ -11,8 +11,8 @@ import clients from '@/data/clients'
 import siteMetadata from '@/data/siteMetadata'
 import BackgroundGlow from '@/components/BackgroundGlow'
 import BackgroundLines from '@/components/BackgroundLines'
-import PackageIconEditorial from '@/data/package-icons-editorial.svg'
-import PackageIconData from '@/data/package-icons-data.svg'
+import PackageIconEditorial from '@/data/assets/package-icons-editorial.svg'
+import PackageIconData from '@/data/assets/package-icons-data.svg'
 
 export default function Home({ posts }) {
 
@@ -121,14 +121,14 @@ export default function Home({ posts }) {
                 <li>Includes SEO tools</li>
               </ul>
 
-              <p className="dark:text-secondary-300 text-xl font-semibold">$6,000 base fee</p>
-
               <p className="">Optional add-ons:</p>
               <ul className="list-disc ml-6">
                 <li>Managed hosting</li>
-                <li>Ongoing support and development</li>
+                <li>Ongoing tech support and development</li>
                 <li>Additional features such as commenting, social media integrations, email notifications, and more.</li>
               </ul>
+
+              <p className="dark:text-secondary-300 text-xl font-semibold">$6,000 + HST</p>
             </div>
 
             <div className="space-y-6 border-[1px] border-primary-300 dark:border-secondary-300 p-6 text-lg">
@@ -143,13 +143,13 @@ export default function Home({ posts }) {
                 <li>Custom data visualizations for your use case, such as mapping, graphs, tables, etc.</li>
                 <li>User interface for sorting, filtering, and searching data</li>
               </ul>
-              <p className="dark:text-secondary-300 text-xl font-semibold">$9,000 base fee</p>
               <p className="">Optional add-ons:</p>
               <ul className="list-disc ml-6">
                 <li>Managed hosting</li>
-                <li>Ongoing support and development</li>
+                <li>Ongoing tech support and development</li>
                 <li>Additional features such as integrations with other apps, automated data input, and more.</li>
               </ul>
+              <p className="dark:text-secondary-300 text-xl font-semibold">$9,000 + HST</p>
 
             </div>
 

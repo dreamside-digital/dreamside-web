@@ -1,10 +1,10 @@
 ---
 title: Safe Support Chat
-description: "An embeddable, privacy-focused chatbox that connects to a customized Matrix backend. The chatbox is used on sexual assault support centre websites across Ontario."
-tags: ['custom software', 'web development', 'open source', 'integrations']
+description: An embeddable, privacy-focused chatbox that connects to a secure messaging app called Matrix. Safe Support Chat is used by sexual assault support centres across Ontario."
+tags: ['custom software', 'open source', 'integrations']
 draft: false
 url: 'https://www.safesupport.chat'
-client: Primal Glow Communications
+client: Primal Glow Communications and the Ontario Coalition of Rape Crisis Centres
 thumbnail: '/images/projects/chatbox-thumbnail.gif'
 thumbnailDescription: 'A video demo of the chatbox in action'
 images: 
@@ -17,4 +17,38 @@ images:
 order: 6
 ---
 
-# Safe Support Chat
+Safe Support Chat is a secure and private chat service built for use by sexual assault support centres through the Ontario Coalition of Rape Crisis Centres (OCRCC). It is made up of three main components:
+
+- an embeddable chatbox that goes on an organization's website
+- a messaging platform for organization staff to respond to chat requests
+- a chatbot that manages the chat sessions
+
+The first component, the chatbox, is how users access the chat service. It is anonymous and encrypted so as soon as it's closed, there is no record of the conversation. The chatbox can be added to any website with a simple embed code, and it works on all screen sizes. It was designed and developed based on the extensive research and experience of our collaborators at Primal Glow Communications, who have worked closely with the OCRCC and their members. We also engaged the services of [GRIT](https://codefor.ca/grit/) to conduct user research and testing of the chatbox. 
+
+The second component, the messaging platform, is how the organization staff respond to chat requests. It is based on the open-source messaging app [Element](https://element.io/). Staff or volunteers can respond to messages either on a computer or on their phone.
+
+The third component is a chatbot that manages the chat sessions. It tells the user about the conditions of the chat and confirms whether they want to to continue. It tells them about the privacy features and how to end the chat safely. It also lets the user know if there are no respondents available. 
+
+Based on the initial feedback of the chat service, we also created SMS and Whatsapp integrations so that people could connect to that chat service via text message or Whatsapp.
+
+Most of the code for this project is open source and available on [Github](https://github.com/safe-support-chat). 
+
+### The technical stuff
+
+The chat server is [Synapse](https://github.com/element-hq/synapse), an open-source [Matrix](https://matrix.org/) homeserver. 
+
+The chatbox is a React app that relies heavily on the [Matrix Javascript SDK](https://github.com/matrix-org/matrix-js-sdk). There is an admin app where organizations can configure and customize their chatbox, including the messaging used by the chatbot, general appearance, and hours of operation. 
+
+The messaging platform is a lightly customized installation of [Element](https://github.com/element-hq), an open-source Matrix chat client.  
+
+The SMS bridge is an Express app using the Twilio API and the Matrix JS SDK to relay messages from the SMS user to the Element messaging app. 
+
+The Whatsapp integration is another chatbot that uses the [mautrix-whatsapp](https://github.com/mautrix/whatsapp) bridge to relay incoming messages from Whatsapp. 
+
+### Collaborators
+
+Safe Support Chat started out as a hackathon project at Random Hacks of Kindness in Ottawa. Thanks to the enthusiastic hackathon participants, the initial design and architecture of the project got kickstarted over the course of a weekend. 
+
+The project then continued under the leadership of [Primal Glow Communications](https://primalglow.ca/) with crucial devops support from [Brent Edwards](https://www.linkedin.com/in/brent-edwards-08846396). 
+
+

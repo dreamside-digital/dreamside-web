@@ -8,6 +8,7 @@ import BackgroundLines from '@/components/BackgroundLines'
 export const metadata = genPageMetadata({ title: 'Projects' })
 
 export default function Projects() {
+  allProjects.sort((a,b) => a.order - b.order)
   return (
     <>
       <SectionContainer>
