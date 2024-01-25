@@ -82,10 +82,10 @@ export default function Home({ posts }) {
       </SectionContainer>
 
       <SectionContainer id="projects" className="py-12 md:py-20">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 mb-12">
           <h2 className="text-4xl md:text-5xl font-semibold !leading-tight mb-4">Here are some of my favourite <span className="handwriting">projects</span></h2>
         </div>
-        <p className="text-right mb-4"><span className="">Scroll</span><span className="text-lg ml-2">→</span></p>
+        {/*<p className="text-right mb-4"><span className="">Scroll</span><span className="text-lg ml-2">→</span></p>*/}
         <Projects />
       </SectionContainer>
 
@@ -140,7 +140,7 @@ export default function Home({ posts }) {
               <p>It includes everything from the Editorial website package, plus:</p>
               <ul className="list-disc ml-6">
                 <li>Custom developed database with a data management system</li>
-                <li>Custom data visualizations for your use case, such as mapping, graphs, tables, etc.</li>
+                <li>Data visualizations for your use case, such as mapping, graphs, tables, etc.</li>
                 <li>User interface for sorting, filtering, and searching data</li>
               </ul>
               <p className="">Optional add-ons:</p>

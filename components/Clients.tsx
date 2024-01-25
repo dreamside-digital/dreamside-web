@@ -26,7 +26,7 @@ export default function Clients() {
           </div>
         </Parallax>
 
-        <h2 className="uppercase text-center font-semibold my-12 !leading-tight tracking-wider">The stellar organizations we've worked with</h2>
+        <h2 className="uppercase text-center font-semibold my-12 !leading-tight tracking-wider">The stellar organizations I've worked with</h2>
         
         <Parallax translateX={['30%', '-30%']}>
           <div className="flex flex-nowrap gap-4 md:gap-12">
