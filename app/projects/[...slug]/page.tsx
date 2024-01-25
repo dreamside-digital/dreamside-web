@@ -24,9 +24,9 @@ export async function generateMetadata({
     return
   }
 
-  let imageList = [siteMetadata.socialBanner]
+  let imageList = [{ src: siteMetadata.socialBanner, alt: 'Studio Shay' }]
   if (post.images) {
-    imageList = typeof post.images === 'string' ? [post.images] : post.images
+    imageList = typeof post.images === 'string' ? [{ src: post.images }] : post.images
   }
   const ogImages = imageList.map((img) => {
     const imgSrc = img.src
@@ -37,10 +37,10 @@ export async function generateMetadata({
 
   return {
     title: post.title,
-    description: post.summary,
+    description: post.description,
     openGraph: {
       title: post.title,
-      description: post.summary,
+      description: post.description,
       siteName: siteMetadata.title,
       locale: 'en_US',
       type: 'article',
@@ -50,8 +50,8 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
       title: post.title,
-      description: post.summary,
-      images: imageList,
+      description: post.description,
+      images: ogImages,
     },
   }
 }
@@ -65,7 +65,8 @@ export const generateStaticParams = async () => {
 export default async function Page({ params }: { params: { slug: string[] } }) {
   const slug = decodeURI(params.slug.join('/'))
   // Filter out drafts in production
-  const sortedCoreContents = allCoreContent(sortPosts(allProjects))
+  const sortedCoreContents = allProjects.filter((p) => !p.draft)
+  sortedCoreContents.sort((a, b) => a.order - b.order)
   const postIndex = sortedCoreContents.findIndex((p) => p.slug === slug)
   if (postIndex === -1) {
     return notFound()
@@ -73,7 +74,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
 
   const prev = sortedCoreContents[postIndex + 1]
   const next = sortedCoreContents[postIndex - 1]
-  const post = allProjects.find((p) => p.slug === slug) as Blog
+  const post = allProjects.find((p) => p.slug === slug) as Project
   const mainContent = coreContent(post)
   const jsonLd = post.structuredData
 

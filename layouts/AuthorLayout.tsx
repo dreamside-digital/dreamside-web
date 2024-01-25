@@ -21,52 +21,77 @@ export default function AuthorLayout({ children, content }: Props) {
       <SectionContainer>
         <div className="mb-12 md:mb-20">
           <div className="space-y-2 pb-12 pt-6 md:space-y-5">
-            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[8vw] !leading-tight font-semibold">
+            <h1 className="text-6xl font-semibold !leading-tight sm:text-7xl md:text-8xl lg:text-[8vw]">
               About
             </h1>
           </div>
 
-          <div className="md:flex md:space-x-6 md:justify-between items-stretch relative">
+          <div className="relative items-stretch md:flex md:justify-between md:space-x-6">
             <div className="md:w-1/2">
               <div className="mb-12 md:mb-20">
-                <p className="text-2xl mb-4">Studio Shay is a digital product studio committed to using design and technology for good.</p>
-                <p className="text-2xl">I work with organizations to accelerate their impact through the use of effective digital tools and thoughtful design. We create inclusive digital products that strengthen communities.</p>
+                <p className="mb-4 text-2xl">
+                  Studio Shay is a digital product studio committed to using design and technology
+                  for good.
+                </p>
+                <p className="text-2xl">
+                  I work with organizations to accelerate their impact through the use of effective
+                  digital tools and thoughtful design. We create inclusive digital products that
+                  strengthen communities.
+                </p>
               </div>
 
               <div className="mb-6 pb-8 pt-6 md:space-y-5">
-                <h2 className="text-4xl md:text-5xl font-semibold !leading-tight">What's in our <span className="handwriting">toolbox?</span></h2>
+                <h2 className="text-4xl font-semibold !leading-tight md:text-5xl">
+                  What's in our <span className="handwriting">toolbox?</span>
+                </h2>
               </div>
 
-              <div className="grid grid-cols-3 gap-4 md:gap-12 mb-12">
+              <div className="mb-12 grid grid-cols-3 gap-4 md:gap-12">
                 <div className="grid-item">
-                  <p className="uppercase tracking-wide text-secondary-300 font-semibold mb-4">Design</p>
+                  <p className="mb-4 font-semibold uppercase tracking-wide text-secondary-300">
+                    Design
+                  </p>
                   <ul>
-                    {
-                      tools.design.map(tool => <li key={tool} className="md:text-2xl mb-2">{tool}</li>)
-                    }
+                    {tools.design.map((tool) => (
+                      <li key={tool} className="mb-2 md:text-2xl">
+                        {tool}
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 <div className="grid-item">
-                  <p className="uppercase tracking-wide text-secondary-300 font-semibold mb-4">Code</p>
+                  <p className="mb-4 font-semibold uppercase tracking-wide text-secondary-300">
+                    Code
+                  </p>
                   <ul>
-                    {
-                      tools.code.map(tool => <li key={tool} className="md:text-2xl mb-2">{tool}</li>)
-                    }
+                    {tools.code.map((tool) => (
+                      <li key={tool} className="mb-2 md:text-2xl">
+                        {tool}
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 <div className="grid-item">
-                  <p className="uppercase tracking-wide text-secondary-300 font-semibold mb-4">Tools</p>
+                  <p className="mb-4 font-semibold uppercase tracking-wide text-secondary-300">
+                    Tools
+                  </p>
                   <ul>
-                    {
-                      tools.tools.map(tool => <li key={tool} className="md:text-2xl mb-2">{tool}</li>)
-                    }
+                    {tools.tools.map((tool) => (
+                      <li key={tool} className="mb-2 md:text-2xl">
+                        {tool}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="md:w-1/2 md:flex justify-center md:justify-end">
-              <div className="md:hidden"><LatestPost isDisabled={true} /></div>
-              <div className="hidden md:block"><LatestPost /></div>
+            <div className="justify-center md:flex md:w-1/2 md:justify-end">
+              <div className="md:hidden">
+                <LatestPost isDisabled={true} />
+              </div>
+              <div className="hidden md:block">
+                <LatestPost />
+              </div>
             </div>
           </div>
         </div>
@@ -74,7 +99,7 @@ export default function AuthorLayout({ children, content }: Props) {
 
       <SectionContainer>
         <div className="mb:12 md:mb-20">
-          <ProfileCard children={children} content={content} />
+          <ProfileCard content={content}>{children}</ProfileCard>
         </div>
       </SectionContainer>
     </>
