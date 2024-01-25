@@ -20,7 +20,7 @@ export default function Projects() {
       </SectionContainer>
 
       <SectionContainer className="py-12 md:py-20">
-        <div className="snap-y snap-mandatory space-y-20">
+        <div className="snap-y snap-mandatory space-y-12 lg:space-y-20">
           {allProjects.map((d) => (
             <Card
               key={d.title}
