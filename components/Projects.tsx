@@ -7,7 +7,7 @@ import Link from '@/components/Link'
 
 export default function Projects() {
   allProjects.sort((a, b) => a.order - b.order)
-  const publishedProjects = allProjects.filter(p => !p.draft)
+  const publishedProjects = allProjects.filter((p) => !p.draft)
 
   return (
     <div className="relative">
