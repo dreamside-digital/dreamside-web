@@ -9,6 +9,7 @@ export const metadata = genPageMetadata({ title: 'Projects' })
 
 export default function Projects() {
   allProjects.sort((a, b) => a.order - b.order)
+  const publishedProjects = allProjects.filter(p => !p.draft)
   return (
     <>
       <SectionContainer>
@@ -21,7 +22,7 @@ export default function Projects() {
 
       <SectionContainer className="py-12 md:py-20">
         <div className="snap-y snap-mandatory space-y-12 lg:space-y-20">
-          {allProjects.map((d) => (
+          {publishedProjects.map((d) => (
             <Card
               key={d.title}
               title={d.title}

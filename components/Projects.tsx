@@ -7,12 +7,13 @@ import Link from '@/components/Link'
 
 export default function Projects() {
   allProjects.sort((a, b) => a.order - b.order)
+  const publishedProjects = allProjects.filter(p => !p.draft)
 
   return (
     <div className="relative">
       <Fade>
         <ul className="styled-scrollbar flex snap-x snap-mandatory flex-nowrap space-x-12 overflow-auto pb-6 pr-12">
-          {allProjects.map((project, index) => {
+          {publishedProjects.map((project, index) => {
             return (
               <li
                 key={project.path}
