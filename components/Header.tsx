@@ -24,7 +24,7 @@ const Header = () => {
                   <Logo />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="flex items-center text-2xl font-display mb-1 text-primary-300 dark:text-secondary-300 sm:text-3xl md:text-4xl tracking-wide">
+                  <div className="mb-1 flex items-center font-display text-2xl tracking-wide text-primary-300 dark:text-secondary-300 sm:text-3xl md:text-4xl">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
