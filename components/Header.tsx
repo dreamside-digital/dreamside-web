@@ -1,7 +1,8 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import LogoLight from '@/data/assets/logo-05.svg'
-import LogoDark from '@/data/assets/logo-04.svg'
+// import LogoLight from '@/data/assets/logo-05.svg'
+// import LogoDark from '@/data/assets/logo-04.svg'
+import Logo from '@/data/assets/logo.svg'
 import Link from './Link'
 import Image from './Image'
 import MobileNav from './MobileNav'
@@ -15,21 +16,15 @@ const Header = () => {
         <div className="flex w-full items-center justify-between py-10">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
-              <div className="flex items-center justify-between">
+              <div className="flex items-end justify-between">
                 <div
                   id="main-logo"
-                  className="md:text-3x mr-3 hidden rotate-45 text-xl text-primary-300 dark:block dark:text-secondary-300 sm:text-2xl"
+                  className="md:text-3x mr-2 text-xl text-primary-300 dark:text-secondary-300 sm:text-2xl"
                 >
-                  <LogoDark />
-                </div>
-                <div
-                  id="main-logo"
-                  className="md:text-3x mr-3 rotate-45 text-xl text-primary-300 dark:hidden dark:text-secondary-300 sm:text-2xl"
-                >
-                  <LogoLight />
+                  <Logo />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="flex items-center text-xl font-semibold text-black dark:text-white sm:text-2xl md:text-3xl">
+                  <div className="flex items-center text-2xl font-display mb-1 text-primary-300 dark:text-secondary-300 sm:text-3xl md:text-4xl tracking-wide">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (

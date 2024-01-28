@@ -4,15 +4,31 @@ import 'pliny/search/algolia.css'
 
 import { Outfit } from 'next/font/google'
 import localFont from 'next/font/local'
+// const displayFont = localFont({
+//   src: [
+//     {
+//       path: '../fonts/Primed-Alt.otf',
+//       weight: '400',
+//       style: 'normal',
+//     },
+//     {
+//       path: '../fonts/Primed.otf',
+//       weight: '400',
+//       style: 'italic',
+//     },
+//   ],
+//   variable: '--font-display',
+// })
+
 const displayFont = localFont({
   src: [
     {
-      path: '../fonts/Primed-Alt.otf',
+      path: '../fonts/TheShow.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../fonts/Primed.otf',
+      path: '../fonts/TheShowItalic.otf',
       weight: '400',
       style: 'italic',
     },

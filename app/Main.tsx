@@ -130,8 +130,8 @@ export default function Home({ posts }) {
 
           <div>
             <p className="mb-4 text-xl">
-              I offer two standard packages that cover the requirements of many typical projects. If
-              you have more specialized needs, I'd be happy to put together a proposal for you.
+              I offer two standard packages that cover the requirements of many typical projects. Both options give you a huge amount of flexibility in terms of design and functionality, and I can build additional features as needed. If
+              you have even more specialized needs, I'd be happy to put together a proposal for you.
             </p>
             <p className="mb-4 text-xl">
               Feel free to reach out to me at{' '}
