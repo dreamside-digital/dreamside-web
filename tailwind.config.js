@@ -43,20 +43,27 @@ module.exports = {
         // purple
 
         primary: { 
-          100: '#F8F2F8',
-          200: '#7547FF', // majorelle
-          300: '#C30985', // pink
-          400: '#571FFF', // electric indigo
-          500: '#0A0029',
-          600: '#C30985', // for search colour
+          100: '#EBEEFC', // lavender
+          200: '#CAD2F7', // periwinkle
+          300: '#8E93F5', // tropical indigo
+          400: '#7547FF', // majorelle blue
+          500: '#571FFF', // electric indigo
+          600: '#3A0CA3', // zaffre, search colour
+          700: '#2F0A85', // 
+          800: '#1A0066', // 
+          900: '#0A0029', // russian violet
         },
         //green
         secondary: { 
-          100: '#EBFFFC',
-          200: '#D6FFF9',
-          300: '#00F5D4', // aquamarine
-          400: '#00A38D',
-          500: '#02263B',
+          100: '#EBFFFD', // azure
+          200: '#D6FFFA', // mint green
+          300: '#a65e9d', // aquamarine
+          400: '#49CEBD', // turquoise
+          500: '#2EB4AB', // sea green
+          600: '#127E88', // teal
+          700: '#096073', // carribean current
+          800: '#183A3A', // dark slate grey
+          900: '#060E0E', // night
         },
         gray: colors.gray,
       },

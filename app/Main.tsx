@@ -42,7 +42,7 @@ export default function Home({ posts }) {
       </SectionContainer>
 
       <SectionContainer id="intro" className="py-12 md:py-20">
-        <div className="bg-white p-8 py-12 dark:bg-primary-500 md:p-16 md:py-24">
+        <div className="bg-white shadow-md p-8 py-12 dark:bg-primary-900 md:p-16 md:py-24">
           <div className="md:flex">
             <div className="md:basis-1/2">
               <h2 className="mb-12 text-4xl font-semibold !leading-tight md:text-5xl">
@@ -123,7 +123,7 @@ export default function Home({ posts }) {
       </section>
 
       <SectionContainer id="packages" className="py-12 md:py-12">
-        <div className="space-y-12 bg-white p-8 py-12 dark:bg-primary-500 md:p-16">
+        <div className="space-y-12">
           <h2 className="text-4xl font-semibold !leading-tight md:text-5xl">
             So what do <span className="handwriting">you</span> have in mind?
           </h2>
@@ -142,11 +142,11 @@ export default function Home({ posts }) {
             </p>
           </div>
           <div className="gap-6 max-md:space-y-6 md:grid md:grid-cols-2">
-            <div className="space-y-6 border-[1px] border-primary-300 p-6 text-lg dark:border-secondary-300">
-              <div className="mb-4 h-28 w-28 text-primary-300 dark:text-secondary-300">
+            <div className="space-y-6 bg-white dark:bg-primary-900 shadow-md p-6 text-lg dark:border-primary-300">
+              <div className="mb-4 h-28 w-28 text-primary-500 dark:text-primary-300">
                 <PackageIconEditorial />
               </div>
-              <h3 className="text-3xl font-semibold dark:text-secondary-300">Editorial website</h3>
+              <h3 className="text-3xl font-semibold text-primary-500 dark:text-primary-300">Editorial website</h3>
 
               <p>
                 If your website is going to be focused on great content such as a blog, portfolio,
@@ -177,14 +177,14 @@ export default function Home({ posts }) {
                 </li>
               </ul>
 
-              <p className="text-xl font-semibold dark:text-secondary-300">$6,000 + HST</p>
+              <p className="text-xl font-semibold text-primary-500 dark:text-primary-300">$6,000 + HST</p>
             </div>
 
-            <div className="space-y-6 border-[1px] border-primary-300 p-6 text-lg dark:border-secondary-300">
-              <div className="mb-4 h-28 w-28 text-primary-300 dark:text-secondary-300">
+            <div className="space-y-6 bg-white dark:bg-primary-900 shadow-md  p-6 text-lg dark:border-primary-300">
+              <div className="mb-4 h-28 w-28 text-primary-500 dark:text-primary-300">
                 <PackageIconData />
               </div>
-              <h3 className="text-3xl font-semibold dark:text-secondary-300">
+              <h3 className="text-3xl font-semibold text-primary-500 dark:text-primary-300">
                 Data-centric website
               </h3>
               <p>
@@ -209,11 +209,11 @@ export default function Home({ posts }) {
                   and more.
                 </li>
               </ul>
-              <p className="text-xl font-semibold dark:text-secondary-300">$9,000 + HST</p>
+              <p className="text-xl font-semibold text-primary-500 dark:text-primary-300">$9,000 + HST</p>
             </div>
 
-            <div className="col-span-2 space-y-6 border-[1px] border-primary-300 p-6 text-lg dark:border-secondary-300">
-              <h3 className="text-3xl font-semibold dark:text-secondary-300">Something else?</h3>
+            <div className="col-span-2 space-y-6 bg-white dark:bg-primary-900 shadow-md  p-6 text-lg dark:border-primary-300">
+              <h3 className="text-3xl font-semibold text-primary-500 dark:text-primary-300">Something else?</h3>
               <p>
                 I am very open to taking on projects that fall outside my standard packages. I'll
                 work with you to understand your needs, come up with an appropriate strategy, and
@@ -227,7 +227,7 @@ export default function Home({ posts }) {
                 <li>Refreshing the design of an existing website</li>
                 <li>Technical support and/or training</li>
               </ul>
-              <p className="text-xl font-semibold dark:text-secondary-300">
+              <p className="text-xl font-semibold text-primary-500 dark:text-primary-300">
                 Contact me to discuss your needs and request a proposal.
               </p>
             </div>

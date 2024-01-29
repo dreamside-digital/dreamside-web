@@ -19,7 +19,7 @@ export default function ProfilePic() {
         </div>
       </Parallax>
       <Parallax speed={-5} className="w-full">
-        <p className="absolute -bottom-4 w-full text-center font-display text-7xl text-primary-300 dark:text-secondary-300 md:-bottom-24 md:text-8xl">
+        <p className="absolute -bottom-4 w-full text-center font-display text-7xl text-primary-400 dark:text-primary-300 md:-bottom-24 md:text-8xl">
           Let's talk!
         </p>
       </Parallax>

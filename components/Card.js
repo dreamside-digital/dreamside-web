@@ -4,7 +4,7 @@ import Link from './Link'
 const Card = ({ title, description, images = [], url, path }) => {
   const image = images[0]
   return (
-    <div className="relative snap-start snap-always overflow-hidden bg-white shadow-[0_0_50px_0_rgba(10,0,41,0.3)] dark:bg-primary-500 dark:shadow-[0_0_60px_0_rgba(0,163,141,0.7)] lg:aspect-video">
+    <div className="relative snap-start snap-always overflow-hidden bg-white shadow-[0_0_50px_0_rgba(10,0,41,0.3)] dark:bg-primary-500 dark:shadow-[0_0_60px_0_rgba(87,31,255,0.3)] lg:aspect-video">
       {image && (
         <Link href={path} aria-label={`Link to ${title}`}>
           <Image
@@ -16,7 +16,7 @@ const Card = ({ title, description, images = [], url, path }) => {
           />
         </Link>
       )}
-      <div className="bottom-0 right-0 bg-white p-6 dark:bg-primary-500 lg:absolute lg:w-1/2">
+      <div className="bottom-0 right-0 bg-white p-6 dark:bg-primary-900 lg:absolute lg:w-1/2">
         <h2 className="mb-2 text-lg font-semibold uppercase leading-8 tracking-wide">
           {path ? (
             <Link href={path} aria-label={`Link to ${title}`}>

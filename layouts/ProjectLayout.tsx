@@ -49,7 +49,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
             <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0">
               <div className="py-4 xl:col-span-3 xl:row-span-2 xl:py-8 xl:pb-0">
                 <h1 className="text-2xl font-semibold">{title}</h1>
-                <div className="prose max-w-none pb-8 pt-10 dark:prose-invert dark:prose-a:text-white dark:hover:prose-a:text-secondary-300">
+                <div className="prose max-w-none pb-8 pt-10 dark:prose-invert dark:prose-a:text-white dark:hover:prose-a:text-primary-300">
                   {children}
                 </div>
               </div>
@@ -57,7 +57,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                 <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
                   {client && (
                     <div className="py-4 xl:py-8">
-                      <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                      <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-primary-300">
                         Client
                       </h2>
                       <p>{client}</p>
@@ -65,7 +65,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                   )}
                   {tags && (
                     <div className="py-4 xl:py-8">
-                      <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                      <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-primary-300">
                         Tags
                       </h2>
                       <div className="flex xl:flex-col">
@@ -79,7 +79,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                   )}
                   {url && (
                     <div className="py-4 xl:py-8">
-                      <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                      <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-primary-300">
                         Website
                       </h2>
                       <Link href={url}>Visit the website</Link>
@@ -87,7 +87,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                   )}
                   {github && (
                     <div className="py-4 xl:py-8">
-                      <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                      <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-primary-300">
                         Source
                       </h2>
                       <Link href={github}>View on GitHub</Link>
@@ -100,7 +100,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                   <div className="flex justify-between py-4">
                     {prev && prev.path && (
                       <div>
-                        <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                        <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-primary-300">
                           Previous Project
                         </h2>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -110,7 +110,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                     )}
                     {next && next.path && (
                       <div>
-                        <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                        <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-primary-300">
                           Next Project
                         </h2>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
