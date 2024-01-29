@@ -42,7 +42,7 @@ export default function Home({ posts }) {
       </SectionContainer>
 
       <SectionContainer id="intro" className="py-12 md:py-20">
-        <div className="bg-white shadow-md p-8 py-12 dark:bg-primary-900 md:p-16 md:py-24">
+        <div className="bg-white p-8 py-12 shadow-md dark:bg-primary-900 md:p-16 md:py-24">
           <div className="md:flex">
             <div className="md:basis-1/2">
               <h2 className="mb-12 text-4xl font-semibold !leading-tight md:text-5xl">
@@ -142,11 +142,13 @@ export default function Home({ posts }) {
             </p>
           </div>
           <div className="gap-6 max-md:space-y-6 md:grid md:grid-cols-2">
-            <div className="space-y-6 bg-white dark:bg-primary-900 shadow-md p-6 text-lg dark:border-primary-300">
+            <div className="space-y-6 bg-white p-6 text-lg shadow-md dark:border-primary-300 dark:bg-primary-900">
               <div className="mb-4 h-28 w-28 text-primary-500 dark:text-primary-300">
                 <PackageIconEditorial />
               </div>
-              <h3 className="text-3xl font-semibold text-primary-500 dark:text-primary-300">Editorial website</h3>
+              <h3 className="text-3xl font-semibold text-primary-500 dark:text-primary-300">
+                Editorial website
+              </h3>
 
               <p>
                 If your website is going to be focused on great content such as a blog, portfolio,
@@ -177,10 +179,12 @@ export default function Home({ posts }) {
                 </li>
               </ul>
 
-              <p className="text-xl font-semibold text-primary-500 dark:text-primary-300">$6,000 + HST</p>
+              <p className="text-xl font-semibold text-primary-500 dark:text-primary-300">
+                $6,000 + HST
+              </p>
             </div>
 
-            <div className="space-y-6 bg-white dark:bg-primary-900 shadow-md  p-6 text-lg dark:border-primary-300">
+            <div className="space-y-6 bg-white p-6 text-lg  shadow-md dark:border-primary-300 dark:bg-primary-900">
               <div className="mb-4 h-28 w-28 text-primary-500 dark:text-primary-300">
                 <PackageIconData />
               </div>
@@ -209,11 +213,15 @@ export default function Home({ posts }) {
                   and more.
                 </li>
               </ul>
-              <p className="text-xl font-semibold text-primary-500 dark:text-primary-300">$9,000 + HST</p>
+              <p className="text-xl font-semibold text-primary-500 dark:text-primary-300">
+                $9,000 + HST
+              </p>
             </div>
 
-            <div className="col-span-2 space-y-6 bg-white dark:bg-primary-900 shadow-md  p-6 text-lg dark:border-primary-300">
-              <h3 className="text-3xl font-semibold text-primary-500 dark:text-primary-300">Something else?</h3>
+            <div className="col-span-2 space-y-6 bg-white p-6 text-lg  shadow-md dark:border-primary-300 dark:bg-primary-900">
+              <h3 className="text-3xl font-semibold text-primary-500 dark:text-primary-300">
+                Something else?
+              </h3>
               <p>
                 I am very open to taking on projects that fall outside my standard packages. I'll
                 work with you to understand your needs, come up with an appropriate strategy, and

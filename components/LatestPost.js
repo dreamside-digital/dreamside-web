@@ -7,7 +7,7 @@ export default function LatestPost({ isDisabled = false }) {
   const translate = isDisabled ? [0, 0] : ['-30%', '90%']
   return (
     <Parallax translateY={translate}>
-      <div className="bg-secondary-300 p-6 md:max-w-sm md:p-8">
+      <div className="bg-primary-300 p-6 md:max-w-sm md:p-8">
         <div className="flex justify-between">
           <span className="mb-4 text-sm uppercase tracking-wide dark:text-primary-500">
             latest news

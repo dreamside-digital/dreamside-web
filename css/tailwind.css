@@ -50,7 +50,7 @@ body {
   }
 
   .btn-theme {
-    @apply inline-block my-3 dark:text-white border-b-2 hover:text-primary-900 hover:-translate-y-1 dark:hover:text-white border-primary-500 hover:border-primary-300 dark:border-primary-300 dark:hover:border-primary-400 dark:hover:text-primary-200 duration-200;
+    @apply inline-block my-3 dark:text-white border-b-2 text-primary-900 hover:text-primary-500 hover:-translate-y-1 dark:hover:text-white border-primary-500 hover:border-primary-900 dark:border-primary-300 dark:hover:border-primary-400 dark:hover:text-primary-200 duration-200;
   }
 
   .btn-theme-inverse {

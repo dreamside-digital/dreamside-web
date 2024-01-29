@@ -21,7 +21,7 @@ export default function Projects() {
               >
                 <div>
                   {project.thumbnail && (
-                    <div className="dark:bg-primary-900 aspect-square overflow-hidden bg-primary-100 shadow-md">
+                    <div className="aspect-square overflow-hidden bg-primary-100 shadow-md dark:bg-primary-900">
                       <Image
                         src={project.thumbnail}
                         height={480}

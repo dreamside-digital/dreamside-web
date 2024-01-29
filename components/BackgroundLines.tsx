@@ -1,6 +1,6 @@
 export default function BackgroundLines() {
   return (
-    <div className="absolute inset-0 -z-20 h-full items-stretch justify-around flex">
+    <div className="absolute inset-0 -z-20 flex h-full items-stretch justify-around">
       <div className="flex-auto border-r-[1px] border-primary-200 dark:border-primary-800" />
       <div className="flex-auto border-r-[1px] border-primary-200 dark:border-primary-800" />
       <div className="flex-auto border-r-[1px] border-primary-200 dark:border-primary-800" />

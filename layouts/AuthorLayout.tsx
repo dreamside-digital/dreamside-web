@@ -48,7 +48,7 @@ export default function AuthorLayout({ children, content }: Props) {
 
               <div className="mb-12 grid grid-cols-3 gap-4 md:gap-12">
                 <div className="grid-item">
-                  <p className="mb-4 font-semibold uppercase tracking-wide text-secondary-300">
+                  <p className="mb-4 font-semibold uppercase tracking-wide text-primary-300">
                     Design
                   </p>
                   <ul>
@@ -60,7 +60,7 @@ export default function AuthorLayout({ children, content }: Props) {
                   </ul>
                 </div>
                 <div className="grid-item">
-                  <p className="mb-4 font-semibold uppercase tracking-wide text-secondary-300">
+                  <p className="mb-4 font-semibold uppercase tracking-wide text-primary-300">
                     Code
                   </p>
                   <ul>
@@ -72,7 +72,7 @@ export default function AuthorLayout({ children, content }: Props) {
                   </ul>
                 </div>
                 <div className="grid-item">
-                  <p className="mb-4 font-semibold uppercase tracking-wide text-secondary-300">
+                  <p className="mb-4 font-semibold uppercase tracking-wide text-primary-300">
                     Tools
                   </p>
                   <ul>
