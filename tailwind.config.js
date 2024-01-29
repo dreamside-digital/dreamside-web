@@ -45,7 +45,7 @@ module.exports = {
         primary: { 
           100: '#EBEEFC', // lavender
           200: '#CAD2F7', // periwinkle
-          300: '#8E93F5', // tropical indigo
+          300: '#A2A6F6', // tropical indigo
           400: '#7547FF', // majorelle blue
           500: '#571FFF', // electric indigo
           600: '#3A0CA3', // zaffre, search colour
