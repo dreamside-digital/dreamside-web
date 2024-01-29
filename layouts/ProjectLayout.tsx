@@ -49,7 +49,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
             <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0">
               <div className="py-4 xl:col-span-3 xl:row-span-2 xl:py-8 xl:pb-0">
                 <h1 className="text-2xl font-semibold">{title}</h1>
-                <div className="prose max-w-none pb-8 pt-10 dark:prose-invert dark:prose-a:text-white dark:hover:prose-a:text-primary-300">
+                <div className="prose max-w-none pb-8 pt-10 dark:prose-invert dark:prose-a:text-white dark:hover:prose-a:text-secondary-300">
                   {children}
                 </div>
               </div>

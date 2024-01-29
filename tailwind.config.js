@@ -57,7 +57,7 @@ module.exports = {
         secondary: { 
           100: '#EBFFFD', // azure
           200: '#D6FFFA', // mint green
-          300: '#a65e9d', // aquamarine
+          300: '#00F5D4', // aquamarine
           400: '#49CEBD', // turquoise
           500: '#2EB4AB', // sea green
           600: '#127E88', // teal

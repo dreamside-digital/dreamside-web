@@ -143,10 +143,10 @@ export default function Home({ posts }) {
           </div>
           <div className="gap-6 max-md:space-y-6 md:grid md:grid-cols-2">
             <div className="space-y-6 bg-white p-6 text-lg shadow-md dark:border-primary-300 dark:bg-primary-900">
-              <div className="mb-4 h-28 w-28 text-primary-500 dark:text-primary-300">
+              <div className="mb-4 h-28 w-28 text-primary-500 dark:text-secondary-300">
                 <PackageIconEditorial />
               </div>
-              <h3 className="text-3xl font-semibold text-primary-500 dark:text-primary-300">
+              <h3 className="text-3xl font-semibold text-primary-500 dark:text-secondary-300">
                 Editorial website
               </h3>
 
@@ -179,16 +179,16 @@ export default function Home({ posts }) {
                 </li>
               </ul>
 
-              <p className="text-xl font-semibold text-primary-500 dark:text-primary-300">
+              <p className="text-xl font-semibold text-primary-500 dark:text-secondary-300">
                 $6,000 + HST
               </p>
             </div>
 
             <div className="space-y-6 bg-white p-6 text-lg  shadow-md dark:border-primary-300 dark:bg-primary-900">
-              <div className="mb-4 h-28 w-28 text-primary-500 dark:text-primary-300">
+              <div className="mb-4 h-28 w-28 text-primary-500 dark:text-secondary-300">
                 <PackageIconData />
               </div>
-              <h3 className="text-3xl font-semibold text-primary-500 dark:text-primary-300">
+              <h3 className="text-3xl font-semibold text-primary-500 dark:text-secondary-300">
                 Data-centric website
               </h3>
               <p>
@@ -213,13 +213,13 @@ export default function Home({ posts }) {
                   and more.
                 </li>
               </ul>
-              <p className="text-xl font-semibold text-primary-500 dark:text-primary-300">
+              <p className="text-xl font-semibold text-primary-500 dark:text-secondary-300">
                 $9,000 + HST
               </p>
             </div>
 
             <div className="col-span-2 space-y-6 bg-white p-6 text-lg  shadow-md dark:border-primary-300 dark:bg-primary-900">
-              <h3 className="text-3xl font-semibold text-primary-500 dark:text-primary-300">
+              <h3 className="text-3xl font-semibold text-primary-500 dark:text-secondary-300">
                 Something else?
               </h3>
               <p>
@@ -235,7 +235,7 @@ export default function Home({ posts }) {
                 <li>Refreshing the design of an existing website</li>
                 <li>Technical support and/or training</li>
               </ul>
-              <p className="text-xl font-semibold text-primary-500 dark:text-primary-300">
+              <p className="text-xl font-semibold text-primary-500 dark:text-secondary-300">
                 Contact me to discuss your needs and request a proposal.
               </p>
             </div>

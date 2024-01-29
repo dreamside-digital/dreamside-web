@@ -13,7 +13,7 @@ export default function Values() {
       <div className="grid-item">
         <Fade>
           <div className="my-12">
-            <div className="mb-4 h-24 w-24 text-primary-500 dark:text-primary-300">
+            <div className="mb-4 h-24 w-24 text-primary-500 dark:text-secondary-300">
               <InclusionIcon />
             </div>
             <h3 className="mb-4 text-2xl font-semibold md:text-3xl">Inclusion</h3>
@@ -27,7 +27,7 @@ export default function Values() {
 
         <Fade>
           <div className="my-12">
-            <div className="mb-4 h-24 w-24 text-primary-500 dark:text-primary-300">
+            <div className="mb-4 h-24 w-24 text-primary-500 dark:text-secondary-300">
               <CollaborationIcon />
             </div>
             <h3 className="mb-4 text-2xl font-semibold md:text-3xl">Collaboration</h3>
@@ -42,7 +42,7 @@ export default function Values() {
 
         <Fade>
           <div className="my-12">
-            <div className="mb-4 h-24 w-24 text-primary-500 dark:text-primary-300">
+            <div className="mb-4 h-24 w-24 text-primary-500 dark:text-secondary-300">
               <OpenIcon />
             </div>
             <h3 className="mb-4 text-2xl font-semibold md:text-3xl">Open-source</h3>

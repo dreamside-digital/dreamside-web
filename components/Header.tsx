@@ -19,12 +19,12 @@ const Header = () => {
               <div className="flex items-end justify-between">
                 <div
                   id="main-logo"
-                  className="md:text-3x mr-3 text-xl text-primary-500 dark:text-primary-300 sm:text-2xl"
+                  className="md:text-3x mr-3 text-xl text-primary-500 dark:text-secondary-300 sm:text-2xl"
                 >
                   <Logo />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="mb-1 flex items-center font-display text-2xl tracking-wide text-primary-500 dark:text-primary-300 sm:text-3xl md:text-4xl">
+                  <div className="mb-1 flex items-center font-display text-2xl tracking-wide text-primary-500 dark:text-secondary-300 sm:text-3xl md:text-4xl">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
