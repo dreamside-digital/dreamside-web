@@ -5,7 +5,7 @@ const siteMetadata = {
   headerTitle: 'Studio Shay',
   description: `A digital product studio committed to using design and technology for good`,
   language: 'en-us',
-  theme: 'dark', // system, dark or light
+  theme: 'system', // system, dark or light
   siteUrl: 'https://www.studioshay.ca',
   siteRepo: 'https://github.com/s-kennedy/studioshay-web',
   siteLogo: '/logo.svg',
