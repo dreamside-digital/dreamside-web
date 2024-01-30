@@ -70,7 +70,6 @@ function createSearchIndex(allBlogs, allProjects) {
     const posts = allCoreContent(sortPosts(allBlogs))
     const projects = allCoreContent(allProjects)
     const docs = [...posts, ...projects]
-    console.log({docs})
 
     writeFileSync(
       `public/${siteMetadata.search.kbarConfig.searchDocumentsPath}`,

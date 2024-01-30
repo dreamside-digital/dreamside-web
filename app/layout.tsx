@@ -37,7 +37,6 @@ const displayFont = localFont({
 })
 
 import { Analytics, AnalyticsConfig } from 'pliny/analytics'
-import { SearchConfig } from 'pliny/search'
 import { SearchProvider } from '@/components/SearchProvider'
 import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
@@ -113,7 +112,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="relative bg-primary-100 text-black antialiased dark:bg-primary-900 dark:text-white">
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
-          <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
+          <SearchProvider>
             <ParallaxProviders>
               <div className="flex min-h-screen w-full flex-col justify-between font-sans">
                 <Banner>
