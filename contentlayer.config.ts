@@ -62,14 +62,19 @@ function createTagCount(allBlogs) {
   writeFileSync('./app/tag-data.json', JSON.stringify(tagCount))
 }
 
-function createSearchIndex(allBlogs) {
+function createSearchIndex(allBlogs, allProjects) {
   if (
     siteMetadata?.search?.provider === 'kbar' &&
     siteMetadata.search.kbarConfig.searchDocumentsPath
   ) {
+    const posts = allCoreContent(sortPosts(allBlogs))
+    const projects = allCoreContent(allProjects)
+    const docs = [...posts, ...projects]
+    console.log({docs})
+
     writeFileSync(
       `public/${siteMetadata.search.kbarConfig.searchDocumentsPath}`,
-      JSON.stringify(allCoreContent(sortPosts(allBlogs)))
+      JSON.stringify(docs)
     )
     console.log('Local search index generated...')
   }
@@ -116,7 +121,7 @@ export const Project = defineDocumentType(() => ({
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
-    description: { type: 'string' },
+    summary: { type: 'string' },
     tags: { type: 'list', of: { type: 'string' }, default: [] },
     draft: { type: 'boolean', required: true },
     url: { type: 'string' },
@@ -135,7 +140,7 @@ export const Project = defineDocumentType(() => ({
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
         headline: doc.title,
-        description: doc.description,
+        description: doc.summary,
         image: doc.thumbnail ? doc.thumbnail : siteMetadata.socialBanner,
         url: `${siteMetadata.siteUrl}/${doc._raw.flattenedPath}`,
       }),
@@ -184,8 +189,8 @@ export default makeSource({
     ],
   },
   onSuccess: async (importData) => {
-    const { allBlogs } = await importData()
+    const { allBlogs, allProjects } = await importData()
     createTagCount(allBlogs)
-    createSearchIndex(allBlogs)
+    createSearchIndex(allBlogs, allProjects)
   },
 })

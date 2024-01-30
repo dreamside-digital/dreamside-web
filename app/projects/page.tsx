@@ -26,7 +26,7 @@ export default function Projects() {
             <Card
               key={d.title}
               title={d.title}
-              description={d.description}
+              summary={d.summary}
               images={d.images}
               url={d.url}
               path={d.path}

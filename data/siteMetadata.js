@@ -11,11 +11,11 @@ const siteMetadata = {
   siteLogo: '/logo.svg',
   socialBanner: '/images/twitter-card.png',
   email: 'shay@studioshay.ca',
-  github: 'https://github.com/nomadic-labs',
-  twitter: 'https://twitter.com/nomadic_labs',
+  github: 'https://github.com/studio-shay',
+  twitter: 'https://twitter.com/studio_shay',
   // linkedin: 'https://www.linkedin.com',
   // threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com/nomadic_labs',
+  instagram: 'https://www.instagram.com/studioshay.ca',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

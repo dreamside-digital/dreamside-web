@@ -7,7 +7,6 @@ export default function BackgroundGlow() {
 
   useEffect(() => {
     const updateMousePosition = (ev) => {
-      console.log({ ev })
       if (!targetRef.current) return
       const { clientX, clientY } = ev
       targetRef.current.style.setProperty('--x', `${clientX}px`)

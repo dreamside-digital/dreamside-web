@@ -32,7 +32,7 @@ export default function Projects() {
                     </div>
                   )}
                   <h3 className="my-4 text-xl font-semibold">{project.title}</h3>
-                  <p>{project.description}</p>
+                  <p>{project.summary}</p>
                   <div className="flex space-x-4">
                     <Link href={`/${project.path}`} className="btn-theme">
                       Case study
