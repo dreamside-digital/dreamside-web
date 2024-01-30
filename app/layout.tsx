@@ -41,7 +41,9 @@ import { SearchConfig } from 'pliny/search'
 import { SearchProvider } from '@/components/SearchProvider'
 import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
+import Banner from '@/components/Banner'
 import Footer from '@/components/Footer'
+import Link from '@/components/Link'
 import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders, ParallaxProviders } from './providers'
 import { Metadata } from 'next'
@@ -114,6 +116,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
             <ParallaxProviders>
               <div className="flex min-h-screen w-full flex-col justify-between font-sans">
+                <Banner>
+                  Nomadic Labs is now Studio Shay! Read more about it on our{' '}
+                  <Link
+                    href="/blog/nomadic-labs-is-now-studio-shay"
+                    className="font-semibold text-white hover:text-primary-200"
+                  >
+                    latest blog post 👉
+                  </Link>
+                </Banner>
                 <Header />
                 <main className="mb-auto">{children}</main>
                 <Footer />

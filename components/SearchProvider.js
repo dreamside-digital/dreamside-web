@@ -39,7 +39,7 @@ export const SearchProvider = ({ children }) => {
           },
         ],
         onSearchDocumentsLoad(json) {
-          return json.map((post: CoreContent<Blog>) => ({
+          return json.map((post) => ({
             id: post.path,
             name: post.title,
             keywords: post?.summary || '',
