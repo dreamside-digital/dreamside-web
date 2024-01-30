@@ -2,7 +2,8 @@ import Link from '@/components/Link'
 import Image from '@/components/Image'
 import SectionContainer from '@/components/SectionContainer'
 import Services from '@/components/Services'
-import Clients from '@/components/Clients'
+import ClientsFade from '@/components/ClientsFade'
+import ClientsParallax from '@/components/ClientsParallax'
 import Values from '@/components/Values'
 import Projects from '@/components/Projects'
 import ProfilePic from '@/components/ProfilePic'
@@ -42,10 +43,10 @@ export default function Home({ posts }) {
       </SectionContainer>
 
       <SectionContainer id="intro" className="py-12 md:py-20">
-        <div className="bg-white p-8 py-12 shadow-md dark:bg-primary-900 md:p-16 md:py-24">
-          <div className="md:flex">
-            <div className="md:basis-1/2">
-              <h2 className="mb-12 text-4xl font-semibold !leading-tight md:text-5xl">
+        <div className="bg-white p-8 shadow-md dark:bg-primary-900 md:p-16 md:py-24">
+          <div className="flex flex-col lg:flex-row">
+            <div className="order-2 shrink-0 lg:order-1 lg:basis-1/2">
+              <h2 className="mb-4 text-4xl font-semibold !leading-tight md:mb-12 md:text-5xl">
                 <span className="handwriting">Hello!</span> I'm Shay and I'll be your web developer.
               </h2>
               <p className="mb-4 text-xl">
@@ -64,7 +65,7 @@ export default function Home({ posts }) {
                 href={`mailto:${siteMetadata.email}`}
               >{`Say hi 👋`}</a>
             </div>
-            <div className="md:basis-1/2">
+            <div className="order-1 lg:order-2 lg:basis-1/2">
               <ProfilePic />
             </div>
           </div>
@@ -108,7 +109,7 @@ export default function Home({ posts }) {
         </div>
       </SectionContainer>
 
-      <SectionContainer id="projects" className="py-12 md:py-20">
+      <SectionContainer id="projects" className="py-8 md:py-12">
         <div className="mb-12 md:w-1/2">
           <h2 className="mb-4 text-4xl font-semibold !leading-tight md:text-5xl">
             Here are some of my favourite <span className="handwriting">projects</span>
@@ -119,7 +120,12 @@ export default function Home({ posts }) {
       </SectionContainer>
 
       <section id="clients" className="max-w-[100vw] overflow-hidden py-12 md:py-20">
-        <Clients />
+        <div className="hidden md:block">
+          <ClientsParallax />
+        </div>
+        <div className="container mx-auto max-w-2xl px-4 md:hidden">
+          <ClientsFade />
+        </div>
       </section>
 
       <SectionContainer id="packages" className="py-12 md:py-12">
@@ -141,7 +147,7 @@ export default function Home({ posts }) {
               conversation started!
             </p>
           </div>
-          <div className="gap-6 max-md:space-y-6 md:grid md:grid-cols-2">
+          <div className="gap-10 max-md:space-y-8 md:grid md:grid-cols-2">
             <div className="space-y-6 bg-white p-6 text-lg shadow-md dark:border-primary-300 dark:bg-primary-900">
               <div className="mb-4 h-28 w-28 text-primary-500 dark:text-secondary-300">
                 <PackageIconEditorial />
@@ -220,7 +226,7 @@ export default function Home({ posts }) {
 
             <div className="col-span-2 space-y-6 bg-white p-6 text-lg  shadow-md dark:border-primary-300 dark:bg-primary-900">
               <h3 className="text-3xl font-semibold text-primary-500 dark:text-secondary-300">
-                Something else?
+                Looking for something else?
               </h3>
               <p>
                 I am very open to taking on projects that fall outside my standard packages. I'll
