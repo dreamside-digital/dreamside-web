@@ -118,7 +118,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Banner>
                   Nomadic Labs is now {siteMetadata.title}! Read more about it on our{' '}
                   <Link
-                    href="/blog/nomadic-labs-is-now-studio-shay"
+                    href="/blog/nomadic-labs-is-now-dreamside-digital"
                     className="font-semibold text-white hover:text-primary-200"
                   >
                     latest blog post 👉
