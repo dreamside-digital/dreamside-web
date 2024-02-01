@@ -1,21 +1,21 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Studio Shay',
+  title: 'Dreamside Digital',
   author: 'Shay Kennedy',
-  headerTitle: 'Studio Shay',
+  headerTitle: 'Dreamside Digital',
   description: `A digital product studio committed to using design and technology for good`,
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://www.studioshay.ca',
+  siteUrl: 'https://www.dreamside.digital',
   siteRepo: 'https://github.com/s-kennedy/studioshay-web',
   siteLogo: '/logo.svg',
   socialBanner: '/images/twitter-card.png',
-  email: 'shay@studioshay.ca',
+  email: 'shay@dreamside.digital',
   github: 'https://github.com/studio-shay',
-  twitter: 'https://twitter.com/studio_shay',
+  twitter: 'https://twitter.com/_dreamside_',
   // linkedin: 'https://www.linkedin.com',
   // threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com/studioshay.ca',
+  instagram: 'https://www.instagram.com/dreamside.digital',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
@@ -26,7 +26,7 @@ const siteMetadata = {
     //   umamiWebsiteId: process.env.NEXT_UMAMI_ID, // e.g. 123e4567-e89b-12d3-a456-426614174000
     // },
     plausibleAnalytics: {
-      plausibleDataDomain: 'studioshay.ca', // e.g. tailwind-nextjs-starter-blog.vercel.app
+      plausibleDataDomain: 'dreamside.digital', // e.g. tailwind-nextjs-starter-blog.vercel.app
     },
     // simpleAnalytics: {},
     // posthogAnalytics: {

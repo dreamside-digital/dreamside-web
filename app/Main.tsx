@@ -56,9 +56,9 @@ export default function Home({ posts }) {
               </p>
               <p className="mb-4 text-xl">
                 In 2018, I co-founded Nomadic Labs, a digital agency committed to working with
-                nonprofits and social enterprises. In 2024, Nomadic Labs rebranded as Studio Shay,
-                with a renewed vision for creating digital products that engage and empower
-                communities and enable organizations to accelerate their impact.
+                nonprofits and social enterprises. In 2024, Nomadic Labs rebranded as{' '}
+                {siteMetadata.title}, with a renewed vision for creating digital products that
+                engage and empower communities and enable organizations to accelerate their impact.
               </p>
               <a
                 className="btn-theme !text-xl font-semibold"

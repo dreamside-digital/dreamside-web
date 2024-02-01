@@ -24,7 +24,7 @@ export async function generateMetadata({
     return
   }
 
-  let imageList = [{ src: siteMetadata.socialBanner, alt: 'Studio Shay' }]
+  let imageList = [{ src: siteMetadata.socialBanner, alt: 'Dreamside Digital' }]
   if (post.images) {
     imageList = typeof post.images === 'string' ? [{ src: post.images }] : post.images
   }

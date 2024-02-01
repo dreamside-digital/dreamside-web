@@ -2,7 +2,7 @@ import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 // import LogoLight from '@/data/assets/logo-05.svg'
 // import LogoDark from '@/data/assets/logo-04.svg'
-import Logo from '@/data/assets/logo.svg'
+import Logo from '@/data/assets/logo-dd.svg'
 import Link from './Link'
 import Image from './Image'
 import MobileNav from './MobileNav'
@@ -23,13 +23,13 @@ const Header = () => {
                 >
                   <Logo />
                 </div>
-                {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="mb-1 flex items-center font-display text-2xl tracking-wide text-primary-500 dark:text-secondary-300 sm:text-3xl md:text-4xl">
+                {/*{typeof siteMetadata.headerTitle === 'string' ? (
+                  <div className="mb-1 flex items-center font-display text-2xltext-primary-500 dark:text-secondary-300 sm:text-3xl md:text-4xl">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
                   siteMetadata.headerTitle
-                )}
+                )}*/}
               </div>
             </Link>
           </div>

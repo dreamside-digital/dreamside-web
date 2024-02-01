@@ -30,8 +30,8 @@ export default function AuthorLayout({ children, content }: Props) {
             <div className="md:w-1/2">
               <div className="mb-12 md:mb-20">
                 <p className="mb-4 text-2xl">
-                  Studio Shay is a digital product studio committed to using design and technology
-                  for good.
+                  Dreamside Digital is a digital product studio committed to using design and
+                  technology for good.
                 </p>
                 <p className="text-2xl">
                   I work with organizations to accelerate their impact through the use of effective

@@ -81,7 +81,7 @@ export default function ListLayoutWithTags({
       <SectionContainer>
         <div className="space-y-2 pt-6 md:space-y-5">
           <h1 className="text-6xl font-semibold !leading-tight sm:text-7xl md:text-8xl lg:text-[8vw]">
-            All Posts
+            Blog
           </h1>
         </div>
       </SectionContainer>

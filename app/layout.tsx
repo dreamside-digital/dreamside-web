@@ -116,7 +116,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <ParallaxProviders>
               <div className="flex min-h-screen w-full flex-col justify-between font-sans">
                 <Banner>
-                  Nomadic Labs is now Studio Shay! Read more about it on our{' '}
+                  Nomadic Labs is now {siteMetadata.title}! Read more about it on our{' '}
                   <Link
                     href="/blog/nomadic-labs-is-now-studio-shay"
                     className="font-semibold text-white hover:text-primary-200"
