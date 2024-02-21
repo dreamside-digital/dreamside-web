@@ -7,11 +7,11 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.dreamside.digital',
-  siteRepo: 'https://github.com/s-kennedy/studioshay-web',
+  siteRepo: 'https://github.com/dreamside-digital',
   siteLogo: '/logo.svg',
   socialBanner: '/images/twitter-card.png',
   email: 'shay@dreamside.digital',
-  github: 'https://github.com/studio-shay',
+  github: 'https://github.com/dreamside-digital',
   twitter: 'https://twitter.com/_dreamside_',
   // linkedin: 'https://www.linkedin.com',
   // threads: 'https://www.threads.net',

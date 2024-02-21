@@ -36,6 +36,17 @@ const displayFont = localFont({
   variable: '--font-display',
 })
 
+const logoFont = localFont({
+  src: [
+    {
+      path: '../fonts/Bogart-Semibold-trial.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-logo',
+})
+
 import { Analytics, AnalyticsConfig } from 'pliny/analytics'
 import { SearchProvider } from '@/components/SearchProvider'
 import Header from '@/components/Header'
@@ -97,7 +108,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang={siteMetadata.language}
-      className={`${outfit.variable} ${displayFont.variable} scroll-smooth`}
+      className={`${outfit.variable} ${displayFont.variable} ${logoFont.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon.png" />

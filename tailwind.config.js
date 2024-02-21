@@ -23,7 +23,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-outfit)', ...fontFamily.sans],
-        display: ['var(--font-display)', ...fontFamily.serif]
+        display: ['var(--font-display)', ...fontFamily.serif],
+        logo: ['var(--font-logo)', ...fontFamily.serif]
       },
       colors: {
         //purple
