@@ -19,7 +19,7 @@ const Header = () => {
               <div className="flex items-end justify-between">
                 <div
                   id="main-logo"
-                  className="hidden sm:block text-sm mr-3 md:text-lg text-primary-500 dark:text-secondary-300"
+                  className="mr-3 hidden text-sm text-primary-500 dark:text-secondary-300 sm:block md:text-lg"
                 >
                   <Logo />
                 </div>
