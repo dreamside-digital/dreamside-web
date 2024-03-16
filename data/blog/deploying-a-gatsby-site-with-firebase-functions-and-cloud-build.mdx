@@ -1,0 +1,140 @@
+---
+title: 'Deploy a Gatsby site with Firebase Functions and Cloud Build'
+date: '2024-03-15'
+lastmod: '2024-03-15'
+tags:
+  - Gatsby
+  - Firebase
+  - tech
+summary: Tutorial on how to deploy a Gatsby site with a Firebase backend using Firebase Functions and Google Cloud Build
+images: ['/static/images/twitter-card.png']
+---
+
+For a few years I was making all of my client websites on a Gatsby frontend and Firebase backend, with a React component library for inline content editing. This was before Gatsby Cloud, and I ended up writing my own little server to build and deploy the Gatsby sites to Firebase hosting. 
+
+Overall it was a pretty great setup and it allowed me to offer clients a fast and secure website that they could edit and publish themselves, with zero hosting costs. For me, the developer experience was pretty great as I liked working in React and having total design freedom, and Firebase offered all the backend infrastructure I needed for those projects.
+
+Then Next.js came along, and Webflow came along, and I decided to move on from Gatsby. But I still had that pesky server hanging around to build the old Gatsby sites, needing to be maintained, costing me money every month. 
+
+So I decided to move all the builds to Google Cloud Build. It's pretty straightforward, but it did take a bit of fiddling so I'm documenting it here. 
+
+## What are we working with here?
+For the project this tutorial is based on, it's a Gatsby v2 site with a Firebase backend: I'm using Firestore, Authentication, Functions, and Hosting. 
+
+## 1. Set up a Cloud Build Trigger
+
+You'll need a Google account with billing enabled. The first 2,500 build minutes per month are free, so if even if you're doing a couple builds a day you shouldn't incur any costs. 
+
+- In Google console, enable the [Cloud Build API](https://console.cloud.google.com/marketplace/product/google/cloudbuild.googleapis.com)
+- Go to [Cloud Build > Triggers](https://console.cloud.google.com/cloud-build/triggers) and create a new trigger
+- In the form to create the trigger, select "Webhook event" for the Event. You'll need to generate a secret or add your own. 
+- Copy the webhook URL preview
+- Connect the repository for your Gatsby site
+- Create a cloudbuild.yaml file. 
+For example:
+```
+steps:
+  - name: node:12.22.12
+    entrypoint: yarn
+    args: ["install"]
+  - name: node:12.22.12
+    entrypoint: yarn
+    args: ["build"]
+  - name: "node:12.22.12"
+    entrypoint: "./node_modules/.bin/firebase"
+    args: ["deploy", "--project", "$PROJECT_ID", "--token", "$_FIREBASE_TOKEN"]
+
+```
+- In the Advanced section, add a substitution variable called `_FIREBASE_TOKEN` and save your Firebase token there - you can generate one with the Firebase CLI command `firebase login:ci`. 
+- Create the trigger!
+
+## Create a Firebase function to securely invoke the trigger
+
+- If you haven't already, install the Firebase CLI (globally) and log in:
+```
+npm install -g firebase-tools
+firebase login
+```
+- create a directory for your Firebase functions
+- in that directory, run `firebase init`
+  - select `functions`
+  - select existing Firebase project
+
+In the new `functions` directory that has been created, go into the index.js file and write the function to call the Cloud Build webhook. 
+
+This is what my function looks like:
+
+```js
+
+const {onCall, HttpsError} = require("firebase-functions/v2/https");
+const {setGlobalOptions} = require("firebase-functions/v2");
+
+const logger = require("firebase-functions/logger");
+const {defineString} = require("firebase-functions/params");
+
+const {initializeApp, applicationDefault} = require("firebase-admin/app");
+const {getFirestore} = require("firebase-admin/firestore");
+
+const webhookUrl = defineString("WEBHOOK_URL");
+
+const app = initializeApp({
+  credential: applicationDefault(),
+  projectId: process.env.PROJECT_ID,
+});
+
+exports.triggerBuild = onCall(async (request) => {
+  // Checking that the user is authenticated.
+  if (!request.auth) {
+    throw new HttpsError("failed-precondition", "The function must be " +
+            "called while authenticated.");
+  }
+
+  try {
+    const db = getFirestore(app);
+    // Authentication / user information is automatically added to the request.
+    const uid = request.auth.uid;
+    const doc = db.doc(`/users/${uid}`);
+    const user = await doc.get();
+    const userData = user.data();
+
+    // Authorization 
+    if (!userData.isAdmin) {
+      throw new HttpsError("permission-denied", "You do not have " +
+        "sufficient permissions to publish the website");
+    }
+
+    const url = webhookUrl.value()
+    logger.info(`URL: ${url}`);
+
+    const res = await fetch(url, {
+      method: "POST",
+      body: {"data": null},
+    });
+
+    logger.info(res);
+
+    return {response: res};
+  } catch (error) {
+    throw new HttpsError("unknown", error.message, error);
+  }
+});
+
+```
+
+Don't forget to create an .env file at the root of the `functions` directory with your variables:
+```
+WEBHOOK_URL=<the webhook URL from the Cloud Build trigger>
+PROJECT_ID=<your Firebase project id>
+```
+
+Deploy your function:
+```js
+firebase deploy --only functions
+```
+
+You can then head over to your Firebase console to grab the request URL for the function! 
+
+
+
+*Credit goes to Crowdform for their tutorial that got me on the right track: https://crowdform.studio/blog/deploying-a-gatsby-site-to-firebase-with-google-cloud-build/*
+
