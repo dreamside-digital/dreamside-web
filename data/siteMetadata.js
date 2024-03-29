@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://www.dreamside.digital',
   siteRepo: 'https://github.com/dreamside-digital',
   siteLogo: '/logo.svg',
-  socialBanner: '/images/twitter-card.png',
+  socialBanner: '/images/og-image.png',
   email: 'shay@dreamside.digital',
   github: 'https://github.com/dreamside-digital',
   twitter: 'https://twitter.com/_dreamside_',
