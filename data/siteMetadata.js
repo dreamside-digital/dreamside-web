@@ -6,11 +6,11 @@ const siteMetadata = {
   description: `A digital product studio committed to using design and technology for good`,
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://www.dreamside.digital',
+  siteUrl: 'https://www.dreamsidedigital.com',
   siteRepo: 'https://github.com/dreamside-digital',
   siteLogo: '/logo.svg',
   socialBanner: '/images/og-image.png',
-  email: 'shay@dreamside.digital',
+  email: 'shay@dreamsidedigital.com',
   github: 'https://github.com/dreamside-digital',
   twitter: 'https://twitter.com/_dreamside_',
   // linkedin: 'https://www.linkedin.com',
@@ -26,7 +26,7 @@ const siteMetadata = {
     //   umamiWebsiteId: process.env.NEXT_UMAMI_ID, // e.g. 123e4567-e89b-12d3-a456-426614174000
     // },
     plausibleAnalytics: {
-      plausibleDataDomain: 'dreamside.digital', // e.g. tailwind-nextjs-starter-blog.vercel.app
+      plausibleDataDomain: 'dreamsidedigital.com', // e.g. tailwind-nextjs-starter-blog.vercel.app
     },
     // simpleAnalytics: {},
     // posthogAnalytics: {
