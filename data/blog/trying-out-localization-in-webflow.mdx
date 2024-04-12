@@ -1,17 +1,96 @@
 ---
-title: 'Trying out the new localization feature in Webflow'
+title: An honest review of Webflow's new localization feature
 date: '2024-02-07'
 lastmod: '2024-02-07'
 tags:
   - technical
   - Webflow
-draft: true
-summary: Come with me to see how I spend my day
+summary: I got a chance to try out Webflow's new localization feature in a recent project, the Abortion Access Tracker. In short, it's convenient that it's built right into the Webflow interface, but it has some major gotchas. Even on a relatively small site, we ran into a lot of issues with things like string interpolation, localizing dates, images within components, and editing permissions. 
 images: ['/static/images/twitter-card.png']
 ---
 
-- editors can't edit locales!!
-- images within components can't be edited easily, it has to be a component property (but text and links can??)
-- no string interpolation
-- dates aren't localized
-- numbers aren't localized
+Webflow started rolling out their [localization feature](https://webflow.com/localization) to non-enterprise customers in November 2023, allowing users to translate website content natively in Webflow (instead of using a third party tool like Weglot or similar). 
+
+I got to try it out on a recent project, the [Abortion Access Tracker](https://www.abortionaccesstracker.ca/), from [LEAF](https://www.leaf.ca/) and [Action Canada](https://www.actioncanadashr.org/). We looked at alternatives like third party integrations or duplicating the whole site, but the native localization feature seemed pretty promising and we wanted to keep the website streamlined and easy to maintain, so we decided to try it out. 
+
+To give some context, the website is in French and English, and it's not a huge site, but it is text-heavy so there was quite a lot of content to translate. We also make use of the CMS feature so we handled translations of static content and CMS content. 
+
+We didn't use the automatic translation feature because we had a professional translator provide the translations. However I will say I tested out the automatic translation on a few fields and it wans't great; if you want your site to be accurate and professional in all your locales don't use the automatic translation. 
+
+This post is about the main issues I ran into (as of March 2024). This isn't a tutorial, so I'm assuming you already know the basics of Webflow, but feel free to comment if anything in here isn't clear.
+
+## The biggest problem: How do content editors edit translations in Webflow? 
+
+Webflow has various roles with different permissions, and one of those roles is Content Editor. You can give someone access to edit just the content of the website, not the design or elements. They just get access to the Editor mode, not Designer. Here's my biggest issue of the feature overall: _you can't edit locales in the Editor._ WTF??? You can only edit locales in the Designer, which means if you hire a translator to enter in translated content, you have to give them access to *everything*.
+
+![In Editor mode there's nowhere to switch locales](/images/blog/localization-fail-3.png)
+
+I didn't find a workaround for this problem, I ended up giving our content editor full access to the Designer in order to enter in the translations (and paying for the extra seat!). 
+
+## Localizing dates, numbers, and currency
+
+![French article with an English date](/images/blog/localization-fail-1.png)
+
+Localization is more than just translated text. Different locales use different formats for dates, numbers, currency, etc. The one that got me is that dates aren't localized so in the French version of our website, the article dates are still in English!! The only workaround is to use one of the date formats that just uses numbers. Not ideal. 
+
+![French article with an English date](/images/blog/localization-fail-4.png)
+
+
+## String interpolation or varying content structure based on locale
+
+Next, we ran into the issue of using CMS data within a localized string. This issue doesn't just apply to localization, Webflow doesn't support string interpolation or even global string variables. However if you're working with just one language you can work around it by separating the text into inline text blocks to combine CMS data and regular text, like this: 
+
+![Separate text blocks put together to make up a full string](/images/blog/localization-fail-2.png)
+
+Other localization libraries support string interpolation, where you can place variables within a translated string. In our case, we have a heading with the format `"{{province}} court cases on abortion"` in English and `"Jurisprudence sur l’avortement en {{province}}"`. The `province` variable comes from the CMS. Guess what? There's no way to do that with the built-in localization feature. Webflow doesn't allow you to re-arrange elements in a secondary locale; the content structure has to be the same in all your locales unless you're on an Enterprise plan 🤑 so the above workaround isn't going to cut it. 
+
+To make it work, I ended up adding a custom script to edit the string based on the locale and CMS data. 
+
+```js
+<script>
+  const locale = document.documentElement.lang
+  const casesHeading = document.getElementById('provincial-court-cases')
+  const placeName = casesHeading.dataset.place
+  
+  
+  if (locale === "fr") {
+    const headingText = `${casesHeading.innerHTML} ${placeName}`
+    casesHeading.innerHTML = headingText
+  } else {
+    const headingText = `${placeName} ${casesHeading.innerHTML}`
+    casesHeading.innerHTML = headingText
+  }
+</script>
+```
+
+And that data attribute comes from a custom attribute set on the heading element:
+![Custom attribute](/images/blog/localization-fail-5.png)
+
+## How to localize images within components
+
+Another gotcha I ran into is localizing images within components. In my case I have a component for the website footer that goes on every page. It contains the logos of the two partner organizations. One of those logos has an English version and a French version. I had no problem adding in translations for the text and links in the footer, but not that pesky image! When I go in to edit the component in my secondary locale, I can't even click on the image settings icon, nothing happens. 
+
+![Image settings aren't clickable in a secondary locale](/images/blog/localization-fail-6.png)
+
+The only way I could find to make this work was to convert the image into a property of the component. But then I had to go to _every instance_ of the footer and update the property to the correct image. For a website this size it was an annoyance, but for a larger site it would be unteneble.  
+
+## Reusing translations throughout the website
+
+Say you have some text that gets repeated throughout the website, like "Back to home" or "Read more". The translation is the same every time, so ideally you'd save that as a variable somewhere and it could get applied everywhere that phrase is used. But nope, on Webflow you have to enter in the translation everywhere it's used. 
+
+This isn't just applicable to translations actually, it would be a nice feature in general to have global text variables. I found it surprising that Webflow supports global style variables (colors, sizes, and fonts) but not text variables. 
+
+I didn't come up a workaround for this; I think it could be achieved with the CMS but that would add an extra layer of complexity for future editors so I didn't think it was worth it.
+
+## Styles can't be edited in secondary locales
+
+Unless you're on an Enterprise plan, you can only edit styles in your primary locale.
+
+This one was such an annoyance because it meant I had to do a lot of switching back and forth between locales for any hidden content. For example, we use tooltips throughout the website, and they're hidden by default. So if I'm editing a French page and I want to edit the tooltip content, I have to switch back to the English locale, make the tooltip visible, switch back to French, copy in my translation, switch back to English, make it hidden again, and switch back to French to continue editing 😩. 
+
+Another reason this limitation will be so frustrating for designers is that your styles have to accommodate _all_ your locales. In my case, I had to resize a bunch of elements in the English locale in order ensure that the French content would fit the layout, since French text is typically a bit longer than the English equivalent. Ideally I'd want to be able to keep my preferred styles in the English version and adapt the styles for the French version as necessary so the layouts look great in both languages. 
+
+## Summary
+
+I'm not going to weigh out the pros and cons of the localization feature - I think Webflow can sell you on the pros, so I'm just trying to document some of the drawbacks. While it does fall short in a number of areas, I appreciate being able to use the Webflow platform to manage translated content without having to integrate a new tool, learn how to use it, and train the clients on it. It's pretty intuitive for straightforward text translations and hopefully the issues I've outlined here will be resolved as Webflow continues to develop the feature. 
+

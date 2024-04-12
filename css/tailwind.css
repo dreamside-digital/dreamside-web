@@ -73,4 +73,12 @@ body {
   width: 100%;
 }
 
+.prose code::before {
+  content: '';
+}
+
+.prose code::after {
+  content: '';
+}
+
 
