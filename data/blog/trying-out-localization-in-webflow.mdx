@@ -1,17 +1,17 @@
 ---
-title: An honest review of Webflow's new localization feature
-date: '2024-02-07'
-lastmod: '2024-02-07'
+title: An honest review of Webflow's localization feature
+date: '2024-04-12'
+lastmod: '2024-04-12'
 tags:
   - technical
   - Webflow
-summary: I got a chance to try out Webflow's new localization feature in a recent project, the Abortion Access Tracker. In short, it's convenient that it's built right into the Webflow interface, but it has some major gotchas. Even on a relatively small site, we ran into a lot of issues with things like string interpolation, localizing dates, images within components, and editing permissions. 
+summary: I got a chance to try out Webflow's new(ish) localization feature in a recent project, the Abortion Access Tracker. In short, it's convenient that it's built right into the Webflow interface, but it has some major drawbacks. Even on a relatively small site, we ran into a lot of issues with things like string interpolation, localizing dates, images within components, and editing permissions. 
 images: ['/static/images/twitter-card.png']
 ---
 
 Webflow started rolling out their [localization feature](https://webflow.com/localization) to non-enterprise customers in November 2023, allowing users to translate website content natively in Webflow (instead of using a third party tool like Weglot or similar). 
 
-I got to try it out on a recent project, the [Abortion Access Tracker](https://www.abortionaccesstracker.ca/), from [LEAF](https://www.leaf.ca/) and [Action Canada](https://www.actioncanadashr.org/). We looked at alternatives like third party integrations or duplicating the whole site, but the native localization feature seemed pretty promising and we wanted to keep the website streamlined and easy to maintain, so we decided to try it out. 
+I got to try it out on a recent project, the [Abortion Access Tracker](https://www.abortionaccesstracker.ca/), from [LEAF](https://www.leaf.ca/) and [Action Canada](https://www.actioncanadashr.org/). We looked at alternatives like third party integrations or duplicating the whole site, but the native localization feature seemed pretty promising and we wanted to keep the website simple and easy to maintain, so we decided to try it out. 
 
 To give some context, the website is in French and English, and it's not a huge site, but it is text-heavy so there was quite a lot of content to translate. We also make use of the CMS feature so we handled translations of static content and CMS content. 
 
