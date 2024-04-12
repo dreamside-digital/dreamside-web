@@ -127,12 +127,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <ParallaxProviders>
               <div className="flex min-h-screen w-full flex-col justify-between font-sans">
                 <Banner>
-                  Nomadic Labs is now {siteMetadata.title}! Read more about it on our{' '}
+                  Nomadic Labs is now {siteMetadata.title}! Read more about it in the{' '}
                   <Link
                     href="/blog/nomadic-labs-is-now-dreamside-digital"
                     className="font-semibold text-white hover:text-primary-200"
                   >
-                    latest blog post 👉
+                    blog post 👉
                   </Link>
                 </Banner>
                 <Header />
