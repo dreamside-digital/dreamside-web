@@ -23,12 +23,12 @@ import localFont from 'next/font/local'
 const displayFont = localFont({
   src: [
     {
-      path: '../fonts/TheShow.otf',
+      path: '../fonts/CuteDrop-Script.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../fonts/TheShowItalic.otf',
+      path: '../fonts/CuteDrop-Script.otf',
       weight: '400',
       style: 'italic',
     },
@@ -39,7 +39,7 @@ const displayFont = localFont({
 const logoFont = localFont({
   src: [
     {
-      path: '../fonts/Bogart-Semibold-trial.ttf',
+      path: '../fonts/CuteDrop-Caps.otf',
       weight: '400',
       style: 'normal',
     },

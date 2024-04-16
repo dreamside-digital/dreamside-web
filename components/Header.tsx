@@ -2,7 +2,8 @@ import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 // import LogoLight from '@/data/assets/logo-05.svg'
 // import LogoDark from '@/data/assets/logo-04.svg'
-import Logo from '@/data/assets/logo-dreamside.svg'
+import Logomark from '@/data/assets/logomark.svg'
+import Logo from '@/data/assets/logo.svg'
 import Link from './Link'
 import Image from './Image'
 import MobileNav from './MobileNav'
@@ -13,18 +14,24 @@ const Header = () => {
   return (
     <header className="w-full">
       <div className="container mx-auto max-w-2xl px-4 sm:px-6 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl xl:px-0">
-        <div className="flex w-full items-center justify-between py-10">
+        <div className="flex w-full items-start sm:items-center justify-between py-5 sm:py-10">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-end justify-between">
                 <div
                   id="main-logo"
-                  className="mr-3 hidden text-sm text-primary-500 dark:text-secondary-300 sm:block md:text-lg"
+                  className="mr-4 sm:hidden text-3xl text-primary-500 dark:text-secondary-300"
                 >
                   <Logo />
                 </div>
+                <div
+                  id="main-logo"
+                  className="mr-4 hidden sm:block text-sm text-primary-500 dark:text-secondary-300"
+                >
+                  <Logomark />
+                </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="flex items-center font-logo text-2xl text-primary-500 dark:text-secondary-300 sm:text-3xl md:text-4xl">
+                  <div className="hidden sm:block flex items-center font-logo text-4xl text-primary-500 dark:text-secondary-300 sm:text-5xl md:text-5xl">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (

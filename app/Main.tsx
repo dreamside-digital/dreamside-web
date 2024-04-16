@@ -20,7 +20,7 @@ export default function Home({ posts }) {
     <>
       <SectionContainer id="landing" className="pb-12">
         <div className="max-w-xs pb-32 pt-4 md:max-w-md">
-          <p className="text-xl md:text-2xl">{siteMetadata.description}</p>
+          <p className="text-lg md:text-2xl">{siteMetadata.description}</p>
         </div>
         <div className="flex flex-col items-end">
           <h1 className="text-right text-6xl !leading-tight sm:text-7xl md:text-8xl lg:text-[8vw]">
@@ -36,7 +36,7 @@ export default function Home({ posts }) {
             <span className="font-semibold"> you'll </span>
             <span className="handwriting">{` love`}</span>
           </h1>
-          <p className="py-8 text-right text-xl md:text-2xl">
+          <p className="py-8 text-right text-lg md:text-2xl">
             *or app, tool, automation, bot... whatever it is you're dreaming of!
           </p>
         </div>

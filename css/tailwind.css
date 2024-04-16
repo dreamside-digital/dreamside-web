@@ -58,7 +58,8 @@ body {
   }
 
   .handwriting {
-    @apply font-display font-normal inline-block ml-1 text-primary-500 dark:text-secondary-300;
+    @apply font-display inline-block ml-1 text-primary-500 dark:text-secondary-300;
+    font-size: 1.25em;
   }
 
   .rotate-slow {
@@ -69,7 +70,7 @@ body {
 
 #main-logo svg {
   fill: currentColor;
-  height: 2.5em;
+  height: 3em;
   width: 100%;
 }
 
