@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="w-full">
       <div className="container mx-auto max-w-2xl px-4 sm:px-6 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl xl:px-0">
-        <div className="flex w-full items-start justify-between py-5 sm:items-center sm:py-10">
+        <div className="flex w-full items-start justify-between py-5 sm:items-center sm:py-8">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-end justify-between">
