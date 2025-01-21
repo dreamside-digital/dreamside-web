@@ -24,8 +24,8 @@ export default function Projects() {
                     <div className="aspect-square overflow-hidden bg-primary-100 shadow-md dark:bg-primary-900">
                       <Image
                         src={project.thumbnail}
-                        height={480}
-                        width={480}
+                        height={800}
+                        width={800}
                         alt={project.thumbnailDescription || ''}
                         className="transform object-cover duration-200 hover:scale-[110%]"
                       />
