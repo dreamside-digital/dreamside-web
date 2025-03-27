@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade'
 
 export default function ProfilePic() {
   return (
-    <>
+    <div className="relative">
       <Fade>
         <div className="relative mb-8 flex flex-col items-center justify-center lg:hidden">
           <Image
@@ -36,6 +36,6 @@ export default function ProfilePic() {
           </p>
         </Parallax>
       </div>
-    </>
+    </div>
   )
 }

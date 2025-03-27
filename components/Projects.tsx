@@ -21,15 +21,17 @@ export default function Projects() {
               >
                 <div>
                   {project.thumbnail && (
-                    <div className="aspect-square overflow-hidden bg-primary-100 shadow-md dark:bg-primary-900">
-                      <Image
-                        src={project.thumbnail}
+                    <Link href={`/${project.path}`}>
+                      <div className="aspect-square overflow-hidden bg-primary-100 shadow-md dark:bg-primary-900">
+                        <Image
+                          src={project.thumbnail}
                         height={800}
                         width={800}
                         alt={project.thumbnailDescription || ''}
                         className="transform object-cover duration-200 hover:scale-[110%]"
-                      />
-                    </div>
+                        />
+                      </div>
+                    </Link>
                   )}
                   <h3 className="my-4 text-xl font-semibold">{project.title}</h3>
                   <p>{project.summary}</p>

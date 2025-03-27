@@ -16,7 +16,7 @@ const Card = ({ title, summary, images = [], url, path }) => {
           />
         </Link>
       )}
-      <div className="bottom-0 right-0 bg-white p-6 dark:bg-primary-900 lg:absolute lg:w-1/2">
+      <div className="shadow-lg bottom-0 right-0 bg-white p-6 dark:bg-primary-900 lg:absolute lg:w-1/2">
         <h2 className="mb-2 text-lg font-semibold uppercase leading-8 tracking-wide">
           {path ? (
             <Link href={path} aria-label={`Link to ${title}`}>
